@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+  <rect width="1200" height="760" rx="40" fill="#0E1E31"/>
+  <rect x="40" y="40" width="1120" height="680" rx="30" fill="#16324A"/>
+  <rect x="88" y="92" width="1024" height="576" rx="28" fill="#F5EEE2"/>
+  <rect x="126" y="130" width="320" height="500" rx="24" fill="#10293E"/>
+  <rect x="476" y="130" width="598" height="144" rx="24" fill="#E9D7BF"/>
+  <rect x="476" y="296" width="598" height="156" rx="24" fill="#F8F3EA"/>
+  <rect x="476" y="474" width="598" height="156" rx="24" fill="#F8F3EA"/>
+  <circle cx="286" cy="302" r="88" stroke="#7DD1FF" stroke-width="18"/>
+  <path d="M286 214V302L350 344" stroke="#D95D39" stroke-width="18" stroke-linecap="round"/>
+  <rect x="154" y="456" width="264" height="20" rx="10" fill="#E8D8C5" fill-opacity=".46"/>
+  <rect x="154" y="496" width="208" height="12" rx="6" fill="#E8D8C5" fill-opacity=".28"/>
+  <rect x="514" y="172" width="240" height="20" rx="10" fill="#10293E"/>
+  <rect x="514" y="206" width="328" height="12" rx="6" fill="#6F7782"/>
+  <rect x="514" y="340" width="196" height="16" rx="8" fill="#10293E"/>
+  <rect x="514" y="376" width="480" height="18" rx="9" fill="#D0D6DC"/>
+  <rect x="514" y="518" width="230" height="16" rx="8" fill="#10293E"/>
+  <rect x="514" y="554" width="430" height="18" rx="9" fill="#D0D6DC"/>
+  <rect x="970" y="326" width="64" height="96" rx="20" fill="#D95D39"/>
+  <rect x="970" y="504" width="64" height="96" rx="20" fill="#0F2A43"/>
+  <text x="132" y="618" fill="#EADCC8" font-family="Arial, sans-serif" font-size="34" font-weight="700">Network Optimizer</text>
+</svg>

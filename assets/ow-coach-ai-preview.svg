@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+  <rect width="1200" height="760" rx="40" fill="#101820"/>
+  <rect x="40" y="40" width="1120" height="680" rx="30" fill="#162736"/>
+  <rect x="84" y="90" width="506" height="270" rx="26" fill="#F6EFE4"/>
+  <rect x="610" y="90" width="506" height="270" rx="26" fill="#0E1D2A"/>
+  <rect x="84" y="388" width="1032" height="282" rx="26" fill="#F6EFE4"/>
+  <circle cx="208" cy="226" r="88" fill="#D95D39" fill-opacity=".18"/>
+  <path d="M156 240C182 208 226 194 268 194C330 194 382 240 382 302" stroke="#0F2A43" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="212" cy="224" r="24" fill="#D95D39"/>
+  <rect x="660" y="138" width="184" height="18" rx="9" fill="#F4E7D7"/>
+  <rect x="660" y="174" width="250" height="12" rx="6" fill="#F4E7D7" fill-opacity=".58"/>
+  <rect x="660" y="228" width="406" height="12" rx="6" fill="#F4E7D7" fill-opacity=".35"/>
+  <rect x="660" y="264" width="356" height="12" rx="6" fill="#F4E7D7" fill-opacity=".35"/>
+  <rect x="128" y="438" width="220" height="18" rx="9" fill="#102E47"/>
+  <path d="M132 586C182 520 230 538 278 502C318 472 360 452 414 448C488 444 548 494 620 494C706 494 732 430 828 430C934 430 972 518 1066 544" stroke="#D95D39" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="278" cy="502" r="14" fill="#102E47"/>
+  <circle cx="620" cy="494" r="14" fill="#102E47"/>
+  <circle cx="828" cy="430" r="14" fill="#102E47"/>
+  <text x="126" y="632" fill="#102E47" font-family="Arial, sans-serif" font-size="34" font-weight="700">OW Coach AI</text>
+</svg>

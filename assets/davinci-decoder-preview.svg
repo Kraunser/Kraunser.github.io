@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" fill="none">
+  <rect width="1200" height="760" rx="40" fill="#111A23"/>
+  <rect x="40" y="40" width="1120" height="680" rx="30" fill="#1A2834"/>
+  <rect x="90" y="92" width="430" height="576" rx="26" fill="#F4EEE4"/>
+  <rect x="548" y="92" width="562" height="260" rx="26" fill="#0F2233"/>
+  <rect x="548" y="378" width="562" height="290" rx="26" fill="#F4EEE4"/>
+  <rect x="132" y="136" width="210" height="18" rx="9" fill="#13283B"/>
+  <rect x="132" y="172" width="310" height="12" rx="6" fill="#69727C"/>
+  <rect x="132" y="228" width="346" height="14" rx="7" fill="#B7BEC5"/>
+  <rect x="132" y="264" width="300" height="14" rx="7" fill="#B7BEC5"/>
+  <rect x="132" y="300" width="258" height="14" rx="7" fill="#B7BEC5"/>
+  <rect x="132" y="384" width="310" height="200" rx="20" fill="#E5D4BD"/>
+  <path d="M596 286L676 210L760 246L852 170L952 218L1048 140" stroke="#7DD1FF" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="676" cy="210" r="14" fill="#D95D39"/>
+  <circle cx="760" cy="246" r="14" fill="#D95D39"/>
+  <circle cx="852" cy="170" r="14" fill="#D95D39"/>
+  <circle cx="952" cy="218" r="14" fill="#D95D39"/>
+  <rect x="592" y="424" width="182" height="16" rx="8" fill="#13283B"/>
+  <rect x="592" y="460" width="464" height="18" rx="9" fill="#C9D0D6"/>
+  <rect x="592" y="496" width="420" height="18" rx="9" fill="#C9D0D6"/>
+  <rect x="592" y="532" width="360" height="18" rx="9" fill="#C9D0D6"/>
+  <text x="130" y="628" fill="#13283B" font-family="Arial, sans-serif" font-size="34" font-weight="700">DaVinci Decoder</text>
+</svg>

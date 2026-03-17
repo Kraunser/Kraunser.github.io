@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Matheus Henrique da Silva Figueiredo Bueno</title>
+  <meta name="description"
+    content="Portfolio com projetos reais, galerias de produto e experiencias em web, IA e desktop." />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Syne:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="glow glow-a" aria-hidden="true"></div>
+  <div class="glow glow-b" aria-hidden="true"></div>
+
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#home">
+        <span class="brand-dot"></span>
+        <span data-field="name">Matheus Henrique da Silva Figueiredo Bueno</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#sobre">Perfil</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a class="nav-cta" href="#contato">Vamos conversar</a>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy reveal reveal-delay-1">
+          <p class="eyebrow">Portfolio 2026</p>
+          <h1>Desenvolvedor full stack focado em sistemas web, automacao e plataformas com IA.</h1>
+          <p class="hero-text" data-field="headline">
+            Eu desenvolvo sistemas, plataformas e ferramentas que resolvem
+            problemas reais usando web, automacao e IA.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projetos">Ver projetos</a>
+            <a class="button button-secondary" href="#contato">Falar comigo</a>
+          </div>
+
+          <ul class="hero-metrics" id="hero-metrics"></ul>
+        </div>
+
+        <aside class="hero-spotlight reveal reveal-delay-2" id="hero-spotlight">
+          <div class="spotlight-head">
+            <span class="spotlight-label">Case em foco</span>
+            <span class="spotlight-count" id="featured-count">00 telas</span>
+          </div>
+
+          <div class="spotlight-frame">
+            <img id="featured-image" src="./assets/gestao-ti/10-admin-dashboard.png"
+              alt="Preview do projeto em destaque" />
+          </div>
+
+          <p class="spotlight-category" id="featured-category">Sistema web</p>
+          <h2 id="featured-title">Projeto em destaque</h2>
+          <p class="spotlight-text" id="featured-description">
+            Descricao do projeto em destaque.
+          </p>
+
+          <div class="featured-tags" id="featured-tags"></div>
+
+          <a class="inline-link" id="featured-link" href="#projetos">
+            Abrir case completo
+          </a>
+        </aside>
+      </section>
+
+      <section class="section" id="sobre">
+        <div class="section-heading">
+          <p class="eyebrow">Perfil</p>
+          <h2>Codigo, design de interface e narrativa visual trabalhando juntos.</h2>
+          <p class="section-intro">
+            O portfolio agora gira em torno de produto real: cases com prints,
+            galerias navegaveis e uma linguagem visual mais atual.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <article class="bento-card bento-story">
+            <span class="bento-label">Resumo</span>
+            <p class="bento-text" data-field="about">
+              Atuo entre desenvolvimento, design de interface e automacao para
+              transformar projetos em entregas mais solidas e mais
+              apresentaveis.
+            </p>
+          </article>
+
+          <article class="bento-card">
+            <span class="bento-label">O que eu entrego</span>
+            <ul class="bento-list" id="services-list"></ul>
+          </article>
+
+          <article class="bento-card">
+            <span class="bento-label">Stack principal</span>
+            <div class="chip-cloud" id="skills-list"></div>
+          </article>
+
+          <article class="bento-card">
+            <span class="bento-label">Fluxo</span>
+            <ol class="workflow-list" id="workflow-list"></ol>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projetos">
+        <div class="section-heading">
+          <p class="eyebrow">Projetos principais</p>
+          <h2>Cases com galerias reais, stack clara e arquitetura resumida.</h2>
+          <p class="section-intro">
+            Cada projeto abaixo mostra produto real, fluxo navegavel, stack e
+            a arquitetura principal por tras da entrega.
+          </p>
+        </div>
+
+        <div class="case-list" id="case-studies"></div>
+      </section>
+
+      <section class="section" id="contato">
+        <div class="contact-panel">
+          <div class="contact-copy">
+            <p class="eyebrow">Contato</p>
+            <h2>Vamos conversar sobre software, produto e oportunidades.</h2>
+            <p class="contact-text">
+              Se voce quer conversar sobre projetos, engenharia de software ou
+              oportunidades como desenvolvedor, pode me chamar.
+            </p>
+          </div>
+
+          <div class="contact-links" id="contact-list"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
