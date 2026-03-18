@@ -7,6 +7,8 @@ const galleryFrom = (folder, entries) =>
 
 const portfolioDataPT = {
   name: "Matheus Henrique da Silva Figueiredo Bueno",
+  heroTitle:
+    "Desenvolvedor full stack focado em sistemas web, automação e plataformas com IA.",
   headline:
     "Eu desenvolvo sistemas, plataformas e ferramentas que resolvem problemas reais usando web, automação e IA.",
   about:
@@ -66,10 +68,10 @@ const portfolioDataPT = {
       summary:
         "Portal de gestão de T.I. com chamados, ativos, inventário, administração e utilitários internos na mesma experiência.",
       description:
-        "Um sistema em Next.js pensado para operação do dia a dia. O case mistura fluxo de suporte, leitura executiva, gerenciamento de equipamentos e ferramentas auxiliares, com várias telas reais para mostrar profundidade do produto.",
+        "Um sistema em Next.js pensado para a operação do dia a dia. O case mistura fluxo de suporte, leitura executiva, gerenciamento de equipamentos e ferramentas auxiliares, com várias telas reais para mostrar a profundidade do produto.",
       stack: ["Next.js", "React", "SQLite", "Recharts"],
       highlights: [
-        "17 telas reais cobrindo login, chamados, ativos, inventario, admin e ferramentas.",
+        "17 telas reais cobrindo login, chamados, ativos, inventário, admin e ferramentas.",
         "Fluxo completo do ticket: fila, detalhes laterais, abertura e acompanhamento.",
         "Leitura operacional e leitura executiva convivendo dentro da mesma plataforma.",
       ],
@@ -120,7 +122,7 @@ const portfolioDataPT = {
         "React + Vite + Pixi.js",
         "FastAPI + Socket.IO",
         "Redis + PostgreSQL",
-        "RAG com PDFs e engine de conhecimento",
+        "RAG com PDFs e motor de conhecimento",
       ],
       repoUrl: "https://github.com/Kraunser/VTT_CoC",
       gallery: galleryFrom("abyssalvtt", [
@@ -157,12 +159,12 @@ const portfolioDataPT = {
       ],
       repoUrl: "https://github.com/Kraunser/ow-coach-ai",
       gallery: galleryFrom("overtrack", [
-        ["HomePage.png", "Home", "Entrada principal do produto com resumo da proposta e atalhos para os modulos."],
+        ["HomePage.png", "Home", "Entrada principal do produto com resumo da proposta e atalhos para os módulos."],
         ["LobbyAnalyser.png", "Lobby analyser", "Leitura do lobby para comparar comps, mapa e confronto antes da partida."],
         ["Stadium Builds.png", "Stadium builds", "Tela de builds com orientações, atributos e contexto do herói."],
         ["Counter Picks.png", "Counter picks", "Análise de counters para tomada de decisão em tempo real."],
         ["News.png", "News", "Área de notícias e atualizações para acompanhar o meta."],
-        ["stadium-tech-preview.png", "Tech preview", "Preview expandido do modulo de builds e leitura visual do sistema."],
+        ["stadium-tech-preview.png", "Tech preview", "Preview expandido do módulo de builds e leitura visual do sistema."],
       ]),
     },
     {
@@ -185,17 +187,298 @@ const portfolioDataPT = {
         "Frontend web de triagem",
         "Flask API",
         "Engine com 95+ algoritmos",
-        "Cripto, heuristica e ML para scoring",
+        "Cripto, heurística e ML para scoring",
       ],
       repoUrl: "https://github.com/Kraunser/Davinci_Decoder",
       gallery: galleryFrom("davinci", [
-        ["portfolio-shot-wide.png", "Wide layout", "Visao ampla da decode workstation e dos resultados."],
+        ["portfolio-shot-wide.png", "Wide layout", "Visão ampla da decode workstation e dos resultados."],
         ["portfolio-shot.png", "Workbench", "Tela principal com input de ciphertext e output priorizado."],
-        ["portfolio-shot-hero.png", "Hero crop", "Enquadramento de apresentacao para o produto."],
+        ["portfolio-shot-hero.png", "Hero crop", "Enquadramento de apresentação para o produto."],
       ]),
     },
   ],
 };
+
+const portfolioDataEN = {
+  name: "Matheus Henrique da Silva Figueiredo Bueno",
+  heroTitle:
+    "Full stack developer focused on web systems, automation, and AI-driven platforms.",
+  headline:
+    "I build systems, platforms, and tools that solve real problems with web, automation, and AI.",
+  about:
+    "I build web systems, automations, and internal tools focused on real-world use. I am interested in software that solves actual problems: operational platforms, APIs, AI flows, and interfaces that make sense in daily routines.",
+  services: [
+    "Web systems for internal operations, support, and administrative control",
+    "AI platforms for analysis, recommendation, and workflow automation",
+    "Dashboards, panels, and products focused on real usage and clear navigation",
+    "Full stack architectures with frontend, backend, and external integrations",
+  ],
+  skills: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Fastify",
+    "FastAPI",
+    "Python",
+    "Flask",
+    "SQLite",
+    "C#",
+    "WPF",
+    "Docker",
+    "Socket.io",
+    "UI Systems",
+  ],
+  workflow: [
+    "I understand the problem, the user's routine, and the main surface of the product.",
+    "I turn the structure into a clear, navigable interface with consistent visual identity.",
+    "I validate responsiveness, presentation, and detail so the case feels strong in practice.",
+  ],
+  contacts: [
+    {
+      label: "Email",
+      value: "Matheushsfbueno@gmail.com",
+      href: "mailto:Matheushsfbueno@gmail.com",
+    },
+    {
+      label: "LinkedIn",
+      value: "Matheus Bueno",
+      href: "https://www.linkedin.com/in/matheus-henrique-da-silva-figueiredo-bueno-8b73211ba/",
+    },
+    {
+      label: "GitHub",
+      value: "github.com/Kraunser",
+      href: "https://github.com/Kraunser",
+    },
+  ],
+  featuredCaseId: "gestao-ti",
+  caseStudies: [
+    {
+      id: "gestao-ti",
+      accent: "#6aa6ff",
+      initialShot: 9,
+      title: "IT Management Portal",
+      category: "Corporate web system",
+      summary:
+        "An IT operations portal that brings tickets, assets, inventory, administration, and internal utilities into one product experience.",
+      description:
+        "A Next.js system designed for day-to-day operations. This case combines support flow, executive dashboards, equipment management, and utility tools, using real screens to show the product's depth.",
+      stack: ["Next.js", "React", "SQLite", "Recharts"],
+      highlights: [
+        "17 real screens covering login, tickets, assets, inventory, admin, and internal tools.",
+        "Complete ticket lifecycle: queue, side details, creation, and follow-up.",
+        "Operational reading and executive reading coexist in the same platform.",
+      ],
+      architecture: [
+        "Next.js + React",
+        "Route handlers + auth",
+        "SQLite + local configuration",
+        "Tickets, assets, and internal utilities",
+      ],
+      repoUrl: "https://github.com/Kraunser/ticket-manager-app",
+      gallery: galleryFrom("gestao-ti", [
+        ["01-login.png", "Login", "Initial entry point to the internal demand portal."],
+        ["02-forgot-password.png", "Recovery", "Forgot-password flow for internal access."],
+        ["03-change-password.png", "New password", "Secure credential update flow."],
+        ["04-tickets-list.png", "Tickets", "Main support queue with filters and SLA visibility."],
+        ["05-ticket-details-sheet.png", "Details", "Side sheet for context, updates, and assignment."],
+        ["06-new-ticket.png", "New ticket", "Structured request creation flow."],
+        ["07-manager-dashboard.png", "Area dashboard", "Tactical view of volume, priority, and status."],
+        ["08-assets.png", "Assets", "Visual overview of equipment by sector."],
+        ["09-inventory.png", "Inventory", "Stock control, availability, and item output."],
+        ["10-admin-dashboard.png", "Executive panel", "Administrative indicators and operational insights."],
+        ["11-admin-users.png", "Users", "People management and access-level administration."],
+        ["12-admin-sectors.png", "Sectors", "Organization sector configuration."],
+        ["13-tools-home.png", "Tools", "Internal hub for IT-focused utilities."],
+        ["14-tools-remove-profile.png", "Remove profile", "Automation for profile maintenance."],
+        ["15-tools-service-manager.png", "Service manager", "Auxiliary flow for technical support."],
+        ["16-tools-disk-cleanup.png", "Disk cleanup", "Integrated maintenance utility."],
+        ["17-settings.png", "Settings", "General platform settings."],
+      ]),
+    },
+    {
+      id: "abyssalvtt",
+      accent: "#62f0c0",
+      initialShot: 3,
+      title: "AbyssalVTT",
+      category: "Collaborative RPG platform",
+      summary:
+        "An atmospheric virtual tabletop for Call of Cthulhu campaigns, with distinct experiences for game master and player.",
+      description:
+        "This selection prioritizes the screens that best communicate the product: entry, guided creation, lobby, active campaign, investigator sheet, and grimoire. The result feels more cinematic and easier to read as a case study.",
+      stack: ["React", "Vite", "Pixi.js", "Socket.io"],
+      highlights: [
+        "Curated gallery with 7 key screens across entry, campaign, sheet, and grimoire.",
+        "Nautical and Lovecraftian art direction from first access to the active table.",
+        "Distinct flows for campaign discovery, guided creation, and in-session consultation.",
+      ],
+      architecture: [
+        "React + Vite + Pixi.js",
+        "FastAPI + Socket.IO",
+        "Redis + PostgreSQL",
+        "RAG with PDFs and a knowledge engine",
+      ],
+      repoUrl: "https://github.com/Kraunser/VTT_CoC",
+      gallery: galleryFrom("abyssalvtt", [
+        ["vtt-login.png", "Entry", "Access screen with strong atmosphere and product identity."],
+        ["vtt-builder-cadastro.png", "Guided creation", "Investigator onboarding flow with step-based creation."],
+        ["vtt-lobby.png", "Harbor of Shadows", "Entry point with the featured campaign and a more editorial presentation."],
+        ["vtt-campaign-lobby.png", "Campaign lobby", "Active campaign view with selected sheet and a ready-to-play summary."],
+        ["vtt-ficha-dashboard.png", "Investigator sheet", "Character dashboard with attributes, resources, and quick state reading."],
+        ["vtt-gm-grimorio.png", "Grimoire", "Knowledge consultation and integrated PDF flow for the table."],
+        ["vtt-player-grimorio.png", "Active table", "Sheet and grimoire being used together during the session."],
+      ]),
+    },
+    {
+      id: "overtrack",
+      accent: "#ffb347",
+      initialShot: 0,
+      title: "OverTrack",
+      category: "AI platform for Overwatch",
+      summary:
+        "A platform for lobby reading, builds, counters, and Overwatch updates in a tactical and analytical interface.",
+      description:
+        "This case combines API, AI, and visual product design. The interface turns data, compositions, and match reading into screens built for quick consultation, helping players interpret the meta and decide better during matches.",
+      stack: ["Fastify", "FastAPI", "Gemini", "OverFast API"],
+      highlights: [
+        "6 real screens showing the homepage, lobby analyzer, builds, counters, and news.",
+        "Architecture split between a gateway and an intelligence service for game analysis.",
+        "Product-like gaming visual language without losing analytical clarity.",
+      ],
+      architecture: [
+        "React frontend",
+        "Fastify gateway",
+        "FastAPI AI service",
+        "OverFast API + Gemini 2.5 Flash",
+      ],
+      repoUrl: "https://github.com/Kraunser/ow-coach-ai",
+      gallery: galleryFrom("overtrack", [
+        ["HomePage.png", "Home", "Main landing screen with a product overview and shortcuts to the core modules."],
+        ["LobbyAnalyser.png", "Lobby analyzer", "Lobby reading to compare comps, map, and matchup before the round starts."],
+        ["Stadium Builds.png", "Stadium builds", "Build screen with guidance, attributes, and hero context."],
+        ["Counter Picks.png", "Counter picks", "Counter analysis for real-time decision-making."],
+        ["News.png", "News", "News area and updates to keep track of the meta."],
+        ["stadium-tech-preview.png", "Tech preview", "Expanded look at the builds module and the system's visual layer."],
+      ]),
+    },
+    {
+      id: "davinci",
+      accent: "#59f89d",
+      initialShot: 0,
+      title: "DaVinci Decoder",
+      category: "Decryption workbench",
+      summary:
+        "A workbench for analyzing ciphertext, files, and multimedia payloads with auto-detect and prioritized output.",
+      description:
+        "The product combines heuristics, machine learning support, and a strong triage interface. In the portfolio, the main screen appears in different framings to highlight the flow between input, detection, and result.",
+      stack: ["Python", "Flask", "scikit-learn", "PyCryptodome"],
+      highlights: [
+        "3 real captures framed specifically for the portfolio.",
+        "A distinct interface language for the decode workstation, input, and output channel.",
+        "Visual storytelling aligned with the technical theme of analysis, preview, and discovery.",
+      ],
+      architecture: [
+        "Web triage frontend",
+        "Flask API",
+        "Engine with 95+ algorithms",
+        "Crypto, heuristics, and ML for scoring",
+      ],
+      repoUrl: "https://github.com/Kraunser/Davinci_Decoder",
+      gallery: galleryFrom("davinci", [
+        ["portfolio-shot-wide.png", "Wide layout", "Wide view of the decode workstation and the results area."],
+        ["portfolio-shot.png", "Workbench", "Main screen with ciphertext input and prioritized output."],
+        ["portfolio-shot-hero.png", "Hero crop", "Presentation framing for the product."],
+      ]),
+    },
+  ],
+};
+
+const staticText = {
+  pt: {
+    heroEyebrow: "Portfólio 2026",
+    navProfile: "Perfil",
+    navProjects: "Projetos",
+    navContact: "Contato",
+    navCta: "Vamos conversar",
+    btnViewProjects: "Ver projetos",
+    btnContact: "Falar comigo",
+    spotlightCase: "Case em foco",
+    openCase: "Abrir case completo",
+    profileEyebrow: "Perfil",
+    profileTitle: "Código, design de interface e narrativa visual trabalhando juntos.",
+    profileIntro:
+      "O portfólio agora gira em torno de produto real: cases com prints, galerias navegáveis e uma linguagem visual mais atual.",
+    bentoSummary: "Resumo",
+    bentoDeliver: "O que eu entrego",
+    bentoStack: "Stack principal",
+    bentoFlow: "Fluxo",
+    projectsEyebrow: "Projetos principais",
+    projectsTitle: "Cases com galerias reais, stack clara e arquitetura resumida.",
+    projectsIntro:
+      "Cada projeto abaixo mostra produto real, fluxo navegável, stack e a arquitetura principal por trás da entrega.",
+    contactEyebrow: "Contato",
+    contactTitle: "Vamos conversar sobre software, produto e oportunidades.",
+    contactIntro:
+      "Se você quer conversar sobre projetos, engenharia de software ou oportunidades como desenvolvedor, pode me chamar.",
+    metricsProjects: "projetos principais",
+    metricsShots: "prints reais integrados",
+    metricsStack: "web, IA e desktop",
+    screensCount: "telas",
+    caseStudyLabel: "Case",
+    architectureLabel: "Arquitetura",
+    viewCode: "Ver código",
+    talkAboutProject: "Conversar sobre o projeto",
+    prevScreenAria: "Tela anterior",
+    nextScreenAria: "Próxima tela",
+    portfolioTitle: "Portfólio",
+  },
+  en: {
+    heroEyebrow: "Portfolio 2026",
+    navProfile: "Profile",
+    navProjects: "Projects",
+    navContact: "Contact",
+    navCta: "Let's talk",
+    btnViewProjects: "View projects",
+    btnContact: "Contact me",
+    spotlightCase: "Featured case",
+    openCase: "Open full case",
+    profileEyebrow: "Profile",
+    profileTitle: "Code, interface design, and visual narrative working together.",
+    profileIntro:
+      "This portfolio revolves around real products: case studies with screenshots, navigable galleries, and a more modern visual language.",
+    bentoSummary: "Summary",
+    bentoDeliver: "What I deliver",
+    bentoStack: "Main stack",
+    bentoFlow: "Workflow",
+    projectsEyebrow: "Main projects",
+    projectsTitle: "Cases with real galleries, clear stack, and summarized architecture.",
+    projectsIntro:
+      "Each project below shows a real product, navigable flow, stack, and the main architecture behind the delivery.",
+    contactEyebrow: "Contact",
+    contactTitle: "Let's talk about software, product, and opportunities.",
+    contactIntro:
+      "If you want to talk about projects, software engineering, or developer opportunities, feel free to reach out.",
+    metricsProjects: "main projects",
+    metricsShots: "real screenshots",
+    metricsStack: "web, AI, and desktop",
+    screensCount: "screens",
+    caseStudyLabel: "Case study",
+    architectureLabel: "Architecture",
+    viewCode: "View code",
+    talkAboutProject: "Talk about the project",
+    prevScreenAria: "Previous screen",
+    nextScreenAria: "Next screen",
+    portfolioTitle: "Portfolio",
+  },
+};
+
+const portfolioDataByLang = {
+  pt: portfolioDataPT,
+  en: portfolioDataEN,
+};
+
+let currentLang = "pt";
+let portfolioData = portfolioDataByLang[currentLang];
 
 function setText(field, value) {
   document.querySelectorAll(`[data-field="${field}"]`).forEach((element) => {
@@ -228,15 +511,18 @@ function renderHero() {
     0
   );
   const projectCount = String(portfolioData.caseStudies.length).padStart(2, "0");
-
-  const metrics = [
-    [projectCount, "projetos principais"],
-    [String(totalShots), "prints reais integrados"],
-    ["Full stack", "web, IA e desktop"],
-  ];
+  const t = staticText[currentLang];
 
   const metricList = document.getElementById("hero-metrics");
-  metrics.forEach(([value, label]) => {
+  const featuredTags = document.getElementById("featured-tags");
+  metricList.replaceChildren();
+  featuredTags.replaceChildren();
+
+  [
+    [projectCount, t.metricsProjects],
+    [String(totalShots), t.metricsShots],
+    ["Full stack", t.metricsStack],
+  ].forEach(([value, label]) => {
     metricList.appendChild(createMetric(value, label));
   });
 
@@ -252,9 +538,8 @@ function renderHero() {
   document.getElementById("featured-category").textContent = featuredProject.category;
   document.getElementById("featured-title").textContent = featuredProject.title;
   document.getElementById("featured-description").textContent = featuredProject.summary;
-  document.getElementById("featured-count").textContent = `${featuredProject.gallery.length} telas`;
+  document.getElementById("featured-count").textContent = `${featuredProject.gallery.length} ${t.screensCount}`;
 
-  const featuredTags = document.getElementById("featured-tags");
   featuredProject.stack.forEach((tech) => {
     featuredTags.appendChild(createChip(tech, "tag"));
   });
@@ -264,23 +549,28 @@ function renderHero() {
 
 function renderProfile() {
   setText("name", portfolioData.name);
+  setText("heroTitle", portfolioData.heroTitle);
   setText("headline", portfolioData.headline);
   setText("about", portfolioData.about);
-  document.title = `Portfólio | ${portfolioData.name}`;
+  document.title = `${staticText[currentLang].portfolioTitle} | ${portfolioData.name}`;
 
   const servicesList = document.getElementById("services-list");
+  const skillsList = document.getElementById("skills-list");
+  const workflowList = document.getElementById("workflow-list");
+  servicesList.replaceChildren();
+  skillsList.replaceChildren();
+  workflowList.replaceChildren();
+
   portfolioData.services.forEach((service) => {
     const item = document.createElement("li");
     item.textContent = service;
     servicesList.appendChild(item);
   });
 
-  const skillsList = document.getElementById("skills-list");
   portfolioData.skills.forEach((skill) => {
     skillsList.appendChild(createChip(skill));
   });
 
-  const workflowList = document.getElementById("workflow-list");
   portfolioData.workflow.forEach((step) => {
     const item = document.createElement("li");
     item.textContent = step;
@@ -289,6 +579,7 @@ function renderProfile() {
 }
 
 function createGallery(project) {
+  const t = staticText[currentLang];
   const shell = document.createElement("div");
   shell.className = "gallery-shell";
   shell.innerHTML = `
@@ -296,8 +587,8 @@ function createGallery(project) {
       <div class="gallery-toolbar">
         <span class="gallery-counter">01 / 01</span>
         <div class="gallery-controls">
-          <button class="gallery-control gallery-prev" type="button" aria-label="\${staticText[currentLang].prevScreenAria}">←</button>
-          <button class="gallery-control gallery-next" type="button" aria-label="\${staticText[currentLang].nextScreenAria}">→</button>
+          <button class="gallery-control gallery-prev" type="button" aria-label="${t.prevScreenAria}">&larr;</button>
+          <button class="gallery-control gallery-next" type="button" aria-label="${t.nextScreenAria}">&rarr;</button>
         </div>
       </div>
       <div class="gallery-canvas">
@@ -351,7 +642,7 @@ function createGallery(project) {
       button.setAttribute("aria-pressed", String(isActive));
     });
 
-    thumbButtons[index].scrollIntoView({
+    thumbButtons[index]?.scrollIntoView({
       behavior: "smooth",
       block: "nearest",
       inline: "center",
@@ -411,14 +702,15 @@ function applyLinkBehavior(link, href) {
 function createCaseStudy(project, index) {
   const article = document.createElement("article");
   article.id = project.id;
-  article.className = `case-study reveal reveal-delay-${Math.min(index + 1, 3)}${index % 2 === 1 ? " is-inverted" : ""
-    }`;
+  article.className = `case-study reveal reveal-delay-${Math.min(index + 1, 3)}${
+    index % 2 === 1 ? " is-inverted" : ""
+  }`;
   article.style.setProperty("--project-accent", project.accent);
 
   const copy = document.createElement("div");
   copy.className = "case-copy";
   copy.innerHTML = `
-    <p class="case-kicker">\${staticText[currentLang].caseStudyLabel}</p>
+    <p class="case-kicker">${staticText[currentLang].caseStudyLabel}</p>
     <p class="project-meta">${project.category}</p>
     <h3>${project.title}</h3>
     <p class="case-summary">${project.summary}</p>
@@ -427,7 +719,9 @@ function createCaseStudy(project, index) {
 
   const metaRow = document.createElement("div");
   metaRow.className = "case-meta-row";
-  metaRow.appendChild(createChip(`${project.gallery.length} telas`, "gallery-chip"));
+  metaRow.appendChild(
+    createChip(`${project.gallery.length} ${staticText[currentLang].screensCount}`, "gallery-chip")
+  );
   metaRow.appendChild(createChip(project.category, "gallery-chip"));
   copy.appendChild(metaRow);
 
@@ -462,13 +756,13 @@ function createCaseStudy(project, index) {
   actions.appendChild(contactLink);
 
   copy.appendChild(actions);
-
   article.append(copy, createGallery(project));
   return article;
 }
 
 function renderCaseStudies() {
   const caseList = document.getElementById("case-studies");
+  caseList.replaceChildren();
   portfolioData.caseStudies.forEach((project, index) => {
     caseList.appendChild(createCaseStudy(project, index));
   });
@@ -476,6 +770,7 @@ function renderCaseStudies() {
 
 function renderContacts() {
   const container = document.getElementById("contact-list");
+  container.replaceChildren();
   portfolioData.contacts.forEach((contact) => {
     const link = document.createElement("a");
     link.className = "contact-link";
@@ -487,9 +782,41 @@ function renderContacts() {
   });
 }
 
-renderHero();
-renderProfile();
-renderCaseStudies();
-renderContacts();
+function applyStaticTranslations() {
+  const t = staticText[currentLang];
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const key = element.getAttribute("data-i18n");
+    if (t[key]) {
+      element.textContent = t[key];
+    }
+  });
+  document.documentElement.lang = currentLang === "pt" ? "pt-BR" : "en";
+}
 
-applyStaticTranslations();
+function updateLanguageButtons() {
+  document.querySelectorAll(".lang-btn").forEach((button) => {
+    button.classList.toggle("is-active", button.dataset.lang === currentLang);
+  });
+}
+
+function renderApp() {
+  portfolioData = portfolioDataByLang[currentLang];
+  renderHero();
+  renderProfile();
+  renderCaseStudies();
+  renderContacts();
+  applyStaticTranslations();
+  updateLanguageButtons();
+}
+
+function setLanguage(lang) {
+  if (!portfolioDataByLang[lang] || currentLang === lang) {
+    return;
+  }
+  currentLang = lang;
+  renderApp();
+}
+
+window.setLanguage = setLanguage;
+
+renderApp();
