@@ -29,18 +29,22 @@
       </a>
 
       <nav class="nav">
-        <a href="#sobre">Perfil</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
+        <a href="#sobre" data-i18n="navProfile">Perfil</a>
+        <a href="#projetos" data-i18n="navProjects">Projetos</a>
+        <a href="#contato" data-i18n="navContact">Contato</a>
+        <div class="lang-toggle">
+          <button class="lang-btn is-active" data-lang="pt" onclick="setLanguage('pt')">PT</button>
+          <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+        </div>
       </nav>
 
-      <a class="nav-cta" href="#contato">Vamos conversar</a>
+      <a class="nav-cta" href="#contato" data-i18n="navCta">Vamos conversar</a>
     </header>
 
     <main id="home">
       <section class="hero">
         <div class="hero-copy reveal reveal-delay-1">
-          <p class="eyebrow">Portfólio 2026</p>
+          <p class="eyebrow" data-i18n="heroEyebrow">Portfólio 2026</p>
           <h1>Desenvolvedor full stack focado em sistemas web, automação e plataformas com IA.</h1>
           <p class="hero-text" data-field="headline">
             Eu desenvolvo sistemas, plataformas e ferramentas que resolvem
@@ -48,8 +52,8 @@
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#projetos">Ver projetos</a>
-            <a class="button button-secondary" href="#contato">Falar comigo</a>
+            <a class="button button-primary" href="#projetos" data-i18n="btnViewProjects">Ver projetos</a>
+            <a class="button button-secondary" href="#contato" data-i18n="btnContact">Falar comigo</a>
           </div>
 
           <ul class="hero-metrics" id="hero-metrics"></ul>
@@ -57,7 +61,7 @@
 
         <aside class="hero-spotlight reveal reveal-delay-2" id="hero-spotlight">
           <div class="spotlight-head">
-            <span class="spotlight-label">Case em foco</span>
+            <span class="spotlight-label" data-i18n="spotlightCase">Case em foco</span>
             <span class="spotlight-count" id="featured-count">00 telas</span>
           </div>
 
@@ -67,14 +71,14 @@
           </div>
 
           <p class="spotlight-category" id="featured-category">Sistema web</p>
-          <h2 id="featured-title">Projeto em destaque</h2>
+          <h2 id="featured-title" data-i18n="featuredProject">Projeto em destaque</h2>
           <p class="spotlight-text" id="featured-description">
             Descrição do projeto em destaque.
           </p>
 
           <div class="featured-tags" id="featured-tags"></div>
 
-          <a class="inline-link" id="featured-link" href="#projetos">
+          <a class="inline-link" id="featured-link" href="#projetos" data-i18n="openCase">
             Abrir case completo
           </a>
         </aside>
@@ -82,9 +86,9 @@
 
       <section class="section" id="sobre">
         <div class="section-heading">
-          <p class="eyebrow">Perfil</p>
-          <h2>Código, design de interface e narrativa visual trabalhando juntos.</h2>
-          <p class="section-intro">
+          <p class="eyebrow" data-i18n="profileEyebrow">Perfil</p>
+          <h2 data-i18n="profileTitle">Código, design de interface e narrativa visual trabalhando juntos.</h2>
+          <p class="section-intro" data-i18n="profileIntro">
             O portfólio agora gira em torno de produto real: cases com prints,
             galerias navegáveis e uma linguagem visual mais atual.
           </p>
@@ -92,7 +96,7 @@
 
         <div class="bento-grid">
           <article class="bento-card bento-story">
-            <span class="bento-label">Resumo</span>
+            <span class="bento-label" data-i18n="bentoSummary">Resumo</span>
             <p class="bento-text" data-field="about">
               Atuo entre desenvolvimento, design de interface e automação para
               transformar projetos em entregas mais sólidas e mais
@@ -101,17 +105,17 @@
           </article>
 
           <article class="bento-card">
-            <span class="bento-label">O que eu entrego</span>
+            <span class="bento-label" data-i18n="bentoDeliver">O que eu entrego</span>
             <ul class="bento-list" id="services-list"></ul>
           </article>
 
           <article class="bento-card">
-            <span class="bento-label">Stack principal</span>
+            <span class="bento-label" data-i18n="bentoStack">Stack principal</span>
             <div class="chip-cloud" id="skills-list"></div>
           </article>
 
           <article class="bento-card">
-            <span class="bento-label">Fluxo</span>
+            <span class="bento-label" data-i18n="bentoFlow">Fluxo</span>
             <ol class="workflow-list" id="workflow-list"></ol>
           </article>
         </div>
@@ -119,9 +123,9 @@
 
       <section class="section" id="projetos">
         <div class="section-heading">
-          <p class="eyebrow">Projetos principais</p>
-          <h2>Cases com galerias reais, stack clara e arquitetura resumida.</h2>
-          <p class="section-intro">
+          <p class="eyebrow" data-i18n="projectsEyebrow">Projetos principais</p>
+          <h2 data-i18n="projectsTitle">Cases com galerias reais, stack clara e arquitetura resumida.</h2>
+          <p class="section-intro" data-i18n="projectsIntro">
             Cada projeto abaixo mostra produto real, fluxo navegável, stack e
             a arquitetura principal por trás da entrega.
           </p>
@@ -133,9 +137,9 @@
       <section class="section" id="contato">
         <div class="contact-panel">
           <div class="contact-copy">
-            <p class="eyebrow">Contato</p>
-            <h2>Vamos conversar sobre software, produto e oportunidades.</h2>
-            <p class="contact-text">
+            <p class="eyebrow" data-i18n="contactEyebrow">Contato</p>
+            <h2 data-i18n="contactTitle">Vamos conversar sobre software, produto e oportunidades.</h2>
+            <p class="contact-text" data-i18n="contactIntro">
               Se você quer conversar sobre projetos, engenharia de software ou
               oportunidades como desenvolvedor, pode me chamar.
             </p>

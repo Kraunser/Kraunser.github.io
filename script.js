@@ -5,7 +5,7 @@ const galleryFrom = (folder, entries) =>
     note,
   }));
 
-const portfolioData = {
+const portfolioDataPT = {
   name: "Matheus Henrique da Silva Figueiredo Bueno",
   headline:
     "Eu desenvolvo sistemas, plataformas e ferramentas que resolvem problemas reais usando web, automação e IA.",
@@ -296,8 +296,8 @@ function createGallery(project) {
       <div class="gallery-toolbar">
         <span class="gallery-counter">01 / 01</span>
         <div class="gallery-controls">
-          <button class="gallery-control gallery-prev" type="button" aria-label="Tela anterior">←</button>
-          <button class="gallery-control gallery-next" type="button" aria-label="Próxima tela">→</button>
+          <button class="gallery-control gallery-prev" type="button" aria-label="\${staticText[currentLang].prevScreenAria}">←</button>
+          <button class="gallery-control gallery-next" type="button" aria-label="\${staticText[currentLang].nextScreenAria}">→</button>
         </div>
       </div>
       <div class="gallery-canvas">
@@ -376,7 +376,7 @@ function createArchitecture(project) {
 
   const title = document.createElement("p");
   title.className = "architecture-label";
-  title.textContent = "Arquitetura";
+  title.textContent = staticText[currentLang].architectureLabel;
   section.appendChild(title);
 
   const flow = document.createElement("div");
@@ -418,7 +418,7 @@ function createCaseStudy(project, index) {
   const copy = document.createElement("div");
   copy.className = "case-copy";
   copy.innerHTML = `
-    <p class="case-kicker">Case study</p>
+    <p class="case-kicker">\${staticText[currentLang].caseStudyLabel}</p>
     <p class="project-meta">${project.category}</p>
     <h3>${project.title}</h3>
     <p class="case-summary">${project.summary}</p>
@@ -451,13 +451,13 @@ function createCaseStudy(project, index) {
 
   const repoLink = document.createElement("a");
   repoLink.className = "case-link case-link-primary";
-  repoLink.textContent = "Ver código";
+  repoLink.textContent = staticText[currentLang].viewCode;
   applyLinkBehavior(repoLink, project.repoUrl);
   actions.appendChild(repoLink);
 
   const contactLink = document.createElement("a");
   contactLink.className = "case-link case-link-secondary";
-  contactLink.textContent = "Conversar sobre o projeto";
+  contactLink.textContent = staticText[currentLang].talkAboutProject;
   applyLinkBehavior(contactLink, "#contato");
   actions.appendChild(contactLink);
 
@@ -491,3 +491,5 @@ renderHero();
 renderProfile();
 renderCaseStudies();
 renderContacts();
+
+applyStaticTranslations();
