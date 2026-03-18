@@ -24,6 +24,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
+  overflow-x: hidden;
   background:
     radial-gradient(circle at top left, rgba(119, 242, 182, 0.16), transparent 28%),
     radial-gradient(circle at 100% 0%, rgba(122, 214, 255, 0.16), transparent 24%),
@@ -76,6 +77,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 button {
   font: inherit;
 }
@@ -107,9 +112,14 @@ button {
 .brand {
   display: inline-flex;
   align-items: center;
+  min-width: 0;
   gap: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.03em;
+}
+
+.brand span:last-child {
+  min-width: 0;
 }
 
 .brand-dot {
@@ -852,19 +862,65 @@ button {
     position: static;
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.85rem;
+    padding: 1rem;
     border-radius: 28px;
   }
 
+  .brand {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .brand span:last-child {
+    max-width: 100%;
+    font-size: 0.98rem;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+  }
+
   .nav {
+    width: 100%;
     flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1rem;
+  }
+
+  .nav a {
+    font-size: 0.95rem;
+  }
+
+  .lang-toggle {
+    margin-left: auto;
   }
 
   .nav-cta {
     width: 100%;
   }
 
+  .hero-copy,
+  .hero-spotlight,
+  .case-study,
+  .bento-card,
+  .contact-panel,
+  .gallery-stage {
+    padding: 1rem;
+  }
+
   .hero h1 {
-    font-size: clamp(2rem, 12.5vw, 4.8rem);
+    max-width: 100%;
+    font-size: clamp(2.2rem, 11vw, 4rem);
+    line-height: 0.96;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-text {
+    font-size: 0.98rem;
+  }
+
+  .hero-spotlight h2,
+  .case-copy h3 {
+    line-height: 0.98;
   }
 
   .hero-metrics,
@@ -879,14 +935,111 @@ button {
   .section-heading h2,
   .contact-copy h2 {
     max-width: 100%;
+    font-size: clamp(2rem, 10vw, 3.2rem);
+    line-height: 0.98;
+  }
+
+  .spotlight-head,
+  .gallery-toolbar {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .gallery-controls {
+    margin-left: auto;
+  }
+
+  .gallery-stage {
+    border-radius: 24px;
   }
 
   .gallery-canvas {
-    min-height: 18rem;
+    min-height: 15rem;
+    padding: 0.55rem;
   }
 
   .gallery-thumb {
     min-width: 150px;
+  }
+
+  .case-actions {
+    flex-direction: column;
+  }
+
+  .case-link {
+    width: 100%;
+  }
+
+  .contact-link {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 520px) {
+  .page-shell {
+    width: calc(100% - 0.75rem);
+    padding-top: 0.75rem;
+  }
+
+  .topbar {
+    border-radius: 24px;
+  }
+
+  .nav {
+    justify-content: flex-start;
+  }
+
+  .lang-toggle {
+    margin-left: 0;
+  }
+
+  .hero-copy {
+    padding: 1rem 0.95rem 1.1rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 12vw, 3.1rem);
+  }
+
+  .hero-actions,
+  .featured-tags,
+  .chip-cloud,
+  .case-meta-row {
+    gap: 0.6rem;
+  }
+
+  .button,
+  .nav-cta,
+  .case-link {
+    width: 100%;
+  }
+
+  .hero-metrics strong {
+    font-size: 1.35rem;
+  }
+
+  .gallery-stage {
+    padding: 0.8rem;
+  }
+
+  .gallery-canvas {
+    min-height: 12.5rem;
+  }
+
+  .gallery-thumb {
+    min-width: 132px;
+    padding: 0.72rem 0.8rem;
+  }
+
+  .architecture-block {
+    padding: 0.9rem;
+  }
+
+  .architecture-node {
+    min-height: 3rem;
+    padding: 0.75rem 0.85rem;
+    font-size: 0.95rem;
   }
 }
 
