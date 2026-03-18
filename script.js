@@ -8,14 +8,14 @@ const galleryFrom = (folder, entries) =>
 const portfolioData = {
   name: "Matheus Henrique da Silva Figueiredo Bueno",
   headline:
-    "Eu desenvolvo sistemas, plataformas e ferramentas que resolvem problemas reais usando web, automacao e IA.",
+    "Eu desenvolvo sistemas, plataformas e ferramentas que resolvem problemas reais usando web, automação e IA.",
   about:
-    "Desenvolvo sistemas web, automações e ferramentas internas com foco em uso real. Me interesso por software que resolve problema de verdade: plataformas operacionais, APIs, fluxos com IA e interfaces que fazem sentido no dia a dia.",
+    "Desenvolvo sistemas web, automações e ferramentas internas com foco em uso real. Me interesso por software que resolve problemas de verdade: plataformas operacionais, APIs, fluxos com IA e interfaces que fazem sentido no dia a dia.",
   services: [
-    "Sistemas web para operacao interna, atendimento e controle administrativo",
-    "Plataformas com IA para analise, recomendacao e automacao de fluxo",
-    "Dashboards, paineis e produtos com foco em uso real e navegacao clara",
-    "Arquiteturas full stack com frontend, backend e integracoes externas",
+    "Sistemas web para operação interna, atendimento e controle administrativo",
+    "Plataformas com IA para análise, recomendação e automação de fluxo",
+    "Dashboards, painéis e produtos com foco em uso real e navegação clara",
+    "Arquiteturas full stack com frontend, backend e integrações externas",
   ],
   skills: [
     "Next.js",
@@ -34,9 +34,9 @@ const portfolioData = {
     "UI Systems",
   ],
   workflow: [
-    "Entendo o problema, a rotina do usuario e a superficie principal do produto.",
-    "Transformo a estrutura em interface clara, navegavel e com identidade visual consistente.",
-    "Valido responsividade, apresentacao e detalhes para que o case fique forte na pratica.",
+    "Entendo o problema, a rotina do usuário e a superfície principal do produto.",
+    "Transformo a estrutura em interface clara, navegável e com identidade visual consistente.",
+    "Valido responsividade, apresentação e detalhes para que o case fique forte na prática.",
   ],
   contacts: [
     {
@@ -61,12 +61,12 @@ const portfolioData = {
       id: "gestao-ti",
       accent: "#6aa6ff",
       initialShot: 9,
-      title: "Portal de Gestao de T.I",
+      title: "Portal de Gestão de T.I.",
       category: "Sistema web corporativo",
       summary:
-        "Portal de gestao de T.I com chamados, ativos, inventario, administracao e utilitarios internos na mesma experiencia.",
+        "Portal de gestão de T.I. com chamados, ativos, inventário, administração e utilitários internos na mesma experiência.",
       description:
-        "Um sistema em Next.js pensado para operacao do dia a dia. O case mistura fluxo de suporte, leitura executiva, gerenciamento de equipamentos e ferramentas auxiliares, com varias telas reais para mostrar profundidade do produto.",
+        "Um sistema em Next.js pensado para operação do dia a dia. O case mistura fluxo de suporte, leitura executiva, gerenciamento de equipamentos e ferramentas auxiliares, com várias telas reais para mostrar profundidade do produto.",
       stack: ["Next.js", "React", "SQLite", "Recharts"],
       highlights: [
         "17 telas reais cobrindo login, chamados, ativos, inventario, admin e ferramentas.",
@@ -76,28 +76,28 @@ const portfolioData = {
       architecture: [
         "Next.js + React",
         "Route handlers + auth",
-        "SQLite + configuracoes locais",
-        "Chamados, ativos e utilitarios internos",
+        "SQLite + configurações locais",
+        "Chamados, ativos e utilitários internos",
       ],
       repoUrl: "https://github.com/Kraunser/ticket-manager-app",
       gallery: galleryFrom("gestao-ti", [
         ["01-login.png", "Login", "Entrada inicial do portal de demandas."],
-        ["02-forgot-password.png", "Recuperacao", "Fluxo de senha esquecida para acesso interno."],
-        ["03-change-password.png", "Nova senha", "Atualizacao segura de credenciais."],
+        ["02-forgot-password.png", "Recuperação", "Fluxo de senha esquecida para acesso interno."],
+        ["03-change-password.png", "Nova senha", "Atualização segura de credenciais."],
         ["04-tickets-list.png", "Chamados", "Fila principal de chamados com filtros e SLA."],
-        ["05-ticket-details-sheet.png", "Detalhes", "Painel lateral para contexto, atualizacoes e responsavel."],
-        ["06-new-ticket.png", "Novo chamado", "Abertura estruturada de solicitacoes."],
-        ["07-manager-dashboard.png", "Dashboard de area", "Visao tatica de volume, prioridade e status."],
+        ["05-ticket-details-sheet.png", "Detalhes", "Painel lateral para contexto, atualizações e responsável."],
+        ["06-new-ticket.png", "Novo chamado", "Abertura estruturada de solicitações."],
+        ["07-manager-dashboard.png", "Dashboard de área", "Visão tática de volume, prioridade e status."],
         ["08-assets.png", "Ativos", "Mapa visual dos equipamentos por setor."],
-        ["09-inventory.png", "Inventario", "Controle de estoque, disponibilidade e saida."],
-        ["10-admin-dashboard.png", "Painel executivo", "Indicadores administrativos e insights de operacao."],
-        ["11-admin-users.png", "Usuarios", "Gestao de pessoas e niveis de acesso."],
-        ["12-admin-sectors.png", "Setores", "Configuracao dos setores da organizacao."],
-        ["13-tools-home.png", "Ferramentas", "Hub interno para utilitarios de T.I."],
-        ["14-tools-remove-profile.png", "Remover perfil", "Automacao para manutencao de perfis."],
-        ["15-tools-service-manager.png", "Service manager", "Fluxo auxiliar para suporte tecnico."],
-        ["16-tools-disk-cleanup.png", "Limpeza de disco", "Utilitario integrado para manutencao."],
-        ["17-settings.png", "Configuracoes", "Ajustes gerais da plataforma."],
+        ["09-inventory.png", "Inventário", "Controle de estoque, disponibilidade e saída."],
+        ["10-admin-dashboard.png", "Painel executivo", "Indicadores administrativos e insights de operação."],
+        ["11-admin-users.png", "Usuários", "Gestão de pessoas e níveis de acesso."],
+        ["12-admin-sectors.png", "Setores", "Configuração dos setores da organização."],
+        ["13-tools-home.png", "Ferramentas", "Hub interno para utilitários de T.I."],
+        ["14-tools-remove-profile.png", "Remover perfil", "Automação para manutenção de perfis."],
+        ["15-tools-service-manager.png", "Service manager", "Fluxo auxiliar para suporte técnico."],
+        ["16-tools-disk-cleanup.png", "Limpeza de disco", "Utilitário integrado para manutenção."],
+        ["17-settings.png", "Configurações", "Ajustes gerais da plataforma."],
       ]),
     },
     {
@@ -107,14 +107,14 @@ const portfolioData = {
       title: "AbyssalVTT",
       category: "Plataforma colaborativa para RPG",
       summary:
-        "Um virtual tabletop atmosferico para campanhas de Call of Cthulhu, com experiencia distinta para mestre e jogador.",
+        "Um virtual tabletop atmosférico para campanhas de Call of Cthulhu, com experiência distinta para mestre e jogador.",
       description:
-        "A selecao agora prioriza as telas que melhor vendem o produto: entrada, criacao guiada, lobby, campanha ativa, ficha e grimorio. O resultado fica mais cinematografico e mais facil de ler como case.",
+        "A seleção agora prioriza as telas que melhor vendem o produto: entrada, criação guiada, lobby, campanha ativa, ficha e grimório. O resultado fica mais cinematográfico e mais fácil de ler como case.",
       stack: ["React", "Vite", "Pixi.js", "Socket.io"],
       highlights: [
-        "Galeria curada com 7 telas-chave entre entrada, campanha, ficha e grimorio.",
-        "Direcao de arte nautica e lovecraftiana aplicada do acesso inicial ate a mesa ativa.",
-        "Fluxos distintos para descoberta da campanha, criacao guiada e consulta durante a sessao.",
+        "Galeria curada com 7 telas-chave entre entrada, campanha, ficha e grimório.",
+        "Direção de arte náutica e lovecraftiana aplicada do acesso inicial até a mesa ativa.",
+        "Fluxos distintos para descoberta da campanha, criação guiada e consulta durante a sessão.",
       ],
       architecture: [
         "React + Vite + Pixi.js",
@@ -125,12 +125,12 @@ const portfolioData = {
       repoUrl: "https://github.com/Kraunser/VTT_CoC",
       gallery: galleryFrom("abyssalvtt", [
         ["vtt-login.png", "Entrada", "Tela de acesso com atmosfera forte e identidade do universo do produto."],
-        ["vtt-builder-cadastro.png", "Criacao guiada", "Fluxo de cadastro do investigador com onboarding orientado por etapas."],
-        ["vtt-lobby.png", "Porto das Sombras", "Entrada da experiencia com campanha em destaque e leitura mais editorial."],
-        ["vtt-campaign-lobby.png", "Lobby da campanha", "Visao da campanha ativa com ficha selecionada e resumo pronto para entrar na sessao."],
-        ["vtt-ficha-dashboard.png", "Ficha do investigador", "Dashboard da ficha com atributos, recursos e leitura rapida de estado."],
-        ["vtt-gm-grimorio.png", "Grimorio", "Consulta de conhecimento e PDF integrado ao fluxo da mesa."],
-        ["vtt-player-grimorio.png", "Mesa ativa", "Uso simultaneo de ficha e grimorio durante a sessao em andamento."],
+        ["vtt-builder-cadastro.png", "Criação guiada", "Fluxo de cadastro do investigador com onboarding orientado por etapas."],
+        ["vtt-lobby.png", "Porto das Sombras", "Entrada da experiência com campanha em destaque e leitura mais editorial."],
+        ["vtt-campaign-lobby.png", "Lobby da campanha", "Visão da campanha ativa com ficha selecionada e resumo pronto para entrar na sessão."],
+        ["vtt-ficha-dashboard.png", "Ficha do investigador", "Dashboard da ficha com atributos, recursos e leitura rápida de estado."],
+        ["vtt-gm-grimorio.png", "Grimório", "Consulta de conhecimento e PDF integrado ao fluxo da mesa."],
+        ["vtt-player-grimorio.png", "Mesa ativa", "Uso simultâneo de ficha e grimório durante a sessão em andamento."],
       ]),
     },
     {
@@ -140,14 +140,14 @@ const portfolioData = {
       title: "OverTrack",
       category: "Plataforma com IA para Overwatch",
       summary:
-        "Plataforma para leitura de lobby, builds, counters e noticias de Overwatch em uma interface tatico-analitica.",
+        "Plataforma para leitura de lobby, builds, counters e notícias de Overwatch em uma interface tático-analítica.",
       description:
-        "Esse case combina API, IA e produto visual. A interface transforma dados, composicoes e leitura de partida em telas pensadas para consulta rapida, com foco em jogadores que querem interpretar o meta e decidir melhor durante a partida.",
+        "Esse case combina API, IA e produto visual. A interface transforma dados, composições e leitura de partida em telas pensadas para consulta rápida, com foco em jogadores que querem interpretar o meta e decidir melhor durante a partida.",
       stack: ["Fastify", "FastAPI", "Gemini", "OverFast API"],
       highlights: [
         "6 telas reais mostrando homepage, lobby analyser, builds, counters e news.",
-        "Arquitetura dividida entre gateway e servico de inteligencia para leitura do jogo.",
-        "Visual consistente com linguagem de produto para gaming, sem perder clareza analitica.",
+        "Arquitetura dividida entre gateway e serviço de inteligência para leitura do jogo.",
+        "Visual consistente com linguagem de produto para gaming, sem perder clareza analítica.",
       ],
       architecture: [
         "React frontend",
@@ -159,9 +159,9 @@ const portfolioData = {
       gallery: galleryFrom("overtrack", [
         ["HomePage.png", "Home", "Entrada principal do produto com resumo da proposta e atalhos para os modulos."],
         ["LobbyAnalyser.png", "Lobby analyser", "Leitura do lobby para comparar comps, mapa e confronto antes da partida."],
-        ["Stadium Builds.png", "Stadium builds", "Tela de builds com orientacoes, atributos e contexto do heroi."],
-        ["Counter Picks.png", "Counter picks", "Analise de counters para tomada de decisao em tempo real."],
-        ["News.png", "News", "Area de noticias e atualizacoes para acompanhar o meta."],
+        ["Stadium Builds.png", "Stadium builds", "Tela de builds com orientações, atributos e contexto do herói."],
+        ["Counter Picks.png", "Counter picks", "Análise de counters para tomada de decisão em tempo real."],
+        ["News.png", "News", "Área de notícias e atualizações para acompanhar o meta."],
         ["stadium-tech-preview.png", "Tech preview", "Preview expandido do modulo de builds e leitura visual do sistema."],
       ]),
     },
@@ -170,16 +170,16 @@ const portfolioData = {
       accent: "#59f89d",
       initialShot: 0,
       title: "DaVinci Decoder",
-      category: "Workbench de decifracao",
+      category: "Workbench de decifração",
       summary:
-        "Uma bancada para analisar ciphertext, arquivos e payloads multimidia com auto-detect e saida priorizada.",
+        "Uma bancada para analisar ciphertext, arquivos e payloads multimídia com auto-detect e saída priorizada.",
       description:
-        "O produto mistura heuristica, apoio de machine learning e uma interface forte para triagem. Aqui o portfolio mostra a tela principal em formatos diferentes, focando na apresentacao do fluxo entre entrada, deteccao e resultado.",
+        "O produto mistura heurística, apoio de machine learning e uma interface forte para triagem. Aqui o portfólio mostra a tela principal em formatos diferentes, focando na apresentação do fluxo entre entrada, detecção e resultado.",
       stack: ["Python", "Flask", "scikit-learn", "PyCryptodome"],
       highlights: [
-        "3 capturas reais com enquadramentos pensados para portfolio.",
-        "Interface com identidade propria para decode workstation, input e output channel.",
-        "Narrativa visual alinhada ao tema tecnico de analise, preview e descoberta.",
+        "3 capturas reais com enquadramentos pensados para portfólio.",
+        "Interface com identidade própria para decode workstation, input e output channel.",
+        "Narrativa visual alinhada ao tema técnico de análise, preview e descoberta.",
       ],
       architecture: [
         "Frontend web de triagem",
@@ -266,7 +266,7 @@ function renderProfile() {
   setText("name", portfolioData.name);
   setText("headline", portfolioData.headline);
   setText("about", portfolioData.about);
-  document.title = `Portfolio | ${portfolioData.name}`;
+  document.title = `Portfólio | ${portfolioData.name}`;
 
   const servicesList = document.getElementById("services-list");
   portfolioData.services.forEach((service) => {
@@ -297,7 +297,7 @@ function createGallery(project) {
         <span class="gallery-counter">01 / 01</span>
         <div class="gallery-controls">
           <button class="gallery-control gallery-prev" type="button" aria-label="Tela anterior">←</button>
-          <button class="gallery-control gallery-next" type="button" aria-label="Proxima tela">→</button>
+          <button class="gallery-control gallery-next" type="button" aria-label="Próxima tela">→</button>
         </div>
       </div>
       <div class="gallery-canvas">
@@ -451,7 +451,7 @@ function createCaseStudy(project, index) {
 
   const repoLink = document.createElement("a");
   repoLink.className = "case-link case-link-primary";
-  repoLink.textContent = "Ver codigo";
+  repoLink.textContent = "Ver código";
   applyLinkBehavior(repoLink, project.repoUrl);
   actions.appendChild(repoLink);
 
