@@ -406,8 +406,6 @@ const staticText = {
     openCase: "Abrir case completo",
     profileEyebrow: "Perfil",
     profileTitle: "Código, design de interface e narrativa visual trabalhando juntos.",
-    profileIntro:
-      "O portfólio agora gira em torno de produto real: cases com prints, galerias navegáveis e uma linguagem visual mais atual.",
     bentoSummary: "Resumo",
     bentoDeliver: "O que eu entrego",
     bentoStack: "Stack principal",
@@ -444,8 +442,6 @@ const staticText = {
     openCase: "Open full case",
     profileEyebrow: "Profile",
     profileTitle: "Code, interface design, and visual narrative working together.",
-    profileIntro:
-      "This portfolio revolves around real products: case studies with screenshots, navigable galleries, and a more modern visual language.",
     bentoSummary: "Summary",
     bentoDeliver: "What I deliver",
     bentoStack: "Main stack",
