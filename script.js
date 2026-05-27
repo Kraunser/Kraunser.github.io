@@ -8,16 +8,16 @@ const galleryFrom = (folder, entries) =>
 const portfolioDataPT = {
   name: "Matheus Henrique da Silva Figueiredo Bueno",
   heroTitle:
-    "Desenvolvedor full stack focado em sistemas web, automação e plataformas com IA.",
+    "Desenvolvedor full stack focado em produtos web, automação e plataformas com IA.",
   headline:
-    "Eu desenvolvo sistemas, plataformas e ferramentas que resolvem problemas reais usando web, automação e IA.",
+    "Eu desenvolvo plataformas completas, interfaces de produto e ferramentas que resolvem problemas reais com web, automação e IA.",
   about:
-    "Desenvolvo sistemas web, automações e ferramentas internas com foco em uso real. Me interesso por software que resolve problemas de verdade: plataformas operacionais, APIs, fluxos com IA e interfaces que fazem sentido no dia a dia.",
+    "Desenvolvo produtos web, automações e ferramentas internas com foco em uso real. Me interesso por software que resolve problemas de verdade: plataformas operacionais, APIs, fluxos com IA, rotinas de estudo e interfaces que fazem sentido no dia a dia.",
   services: [
     "Sistemas web para operação interna, atendimento e controle administrativo",
+    "Produtos full stack com autenticação, banco de dados, dashboards e fluxos de usuário",
     "Plataformas com IA para análise, recomendação e automação de fluxo",
-    "Dashboards, painéis e produtos com foco em uso real e navegação clara",
-    "Arquiteturas full stack com frontend, backend e integrações externas",
+    "Interfaces de produto com navegação clara, galerias reais e narrativa técnica",
   ],
   skills: [
     "Next.js",
@@ -29,16 +29,16 @@ const portfolioDataPT = {
     "Python",
     "Flask",
     "SQLite",
-    "C#",
-    "WPF",
+    "Django REST",
+    "PostgreSQL",
     "Docker",
     "Socket.io",
     "UI Systems",
   ],
   workflow: [
     "Entendo o problema, a rotina do usuário e a superfície principal do produto.",
-    "Transformo a estrutura em interface clara, navegável e com identidade visual consistente.",
-    "Valido responsividade, apresentação e detalhes para que o case fique forte na prática.",
+    "Estruturo backend, dados e interface para sustentar o fluxo principal com clareza.",
+    "Valido responsividade, narrativa visual e detalhes para que o case fique forte na prática.",
   ],
   contacts: [
     {
@@ -57,7 +57,7 @@ const portfolioDataPT = {
       href: "https://github.com/Kraunser",
     },
   ],
-  featuredCaseId: "gestao-ti",
+  featuredCaseId: "kairon",
   caseStudies: [
     {
       id: "gestao-ti",
@@ -81,7 +81,7 @@ const portfolioDataPT = {
         "SQLite + configurações locais",
         "Chamados, ativos e utilitários internos",
       ],
-      repoUrl: "https://github.com/Kraunser/ticket-manager-app",
+      repoUrl: null,
       gallery: galleryFrom("gestao-ti", [
         ["01-login.png", "Login", "Entrada inicial do portal de demandas."],
         ["02-forgot-password.png", "Recuperação", "Fluxo de senha esquecida para acesso interno."],
@@ -100,6 +100,37 @@ const portfolioDataPT = {
         ["15-tools-service-manager.png", "Service manager", "Fluxo auxiliar para suporte técnico."],
         ["16-tools-disk-cleanup.png", "Limpeza de disco", "Utilitário integrado para manutenção."],
         ["17-settings.png", "Configurações", "Ajustes gerais da plataforma."],
+      ]),
+    },
+    {
+      id: "kairon",
+      accent: "#4f8cff",
+      initialShot: 2,
+      title: "Kairon",
+      category: "Plataforma de produtividade para estudantes",
+      summary:
+        "Plataforma full stack para rotina de estudos com áreas de foco, board de tarefas, sessões de foco e gamificação.",
+      description:
+        "O Kairon organiza produtividade acadêmica em um fluxo mais completo do que um task manager simples. O produto combina onboarding, segmentação por workspace, board operacional, sessões de foco e uma camada de progresso para manter constância de estudo.",
+      stack: ["React", "TypeScript", "Django REST Framework", "PostgreSQL"],
+      highlights: [
+        "5 telas reais cobrindo landing, áreas de foco, board, foco e progresso gamificado.",
+        "Arquitetura full stack com autenticação JWT, isolamento por workspace e service layer no backend.",
+        "Fluxo de produto mais amplo que CRUD: planejamento, execução, foco e acompanhamento de evolução.",
+      ],
+      architecture: [
+        "React + TypeScript + Vite",
+        "Django + DRF + JWT",
+        "PostgreSQL",
+        "Workspaces, tasks, focus e gamificação",
+      ],
+      repoUrl: null,
+      gallery: galleryFrom("kairon", [
+        ["01-auth-screen.png", "Auth e landing", "Entrada do produto com proposta clara, prova visual e fluxo de autenticação."],
+        ["02-workspace-picker.png", "Áreas de foco", "Seleção de workspaces para separar rotina, estudos e projetos em ambientes distintos."],
+        ["03-board-dashboard.png", "Board de tarefas", "Visão principal de operação com métricas, filtros, colunas e cards acionáveis."],
+        ["04-focus-panel.png", "Sessão de foco", "Fluxo de foco com duração configurável e vínculo opcional com tarefa ativa."],
+        ["05-progress-panel.png", "Progresso e gamificação", "Painel de evolução com nível, streak, missões e badges desbloqueados."],
       ]),
     },
     {
@@ -124,7 +155,7 @@ const portfolioDataPT = {
         "Redis + PostgreSQL",
         "RAG com PDFs e motor de conhecimento",
       ],
-      repoUrl: "https://github.com/Kraunser/VTT_CoC",
+      repoUrl: null,
       gallery: galleryFrom("abyssalvtt", [
         ["vtt-login.png", "Entrada", "Tela de acesso com atmosfera forte e identidade do universo do produto."],
         ["vtt-builder-cadastro.png", "Criação guiada", "Fluxo de cadastro do investigador com onboarding orientado por etapas."],
@@ -157,7 +188,7 @@ const portfolioDataPT = {
         "FastAPI AI service",
         "OverFast API + Gemini 2.5 Flash",
       ],
-      repoUrl: "https://github.com/Kraunser/ow-coach-ai",
+      repoUrl: null,
       gallery: galleryFrom("overtrack", [
         ["HomePage.png", "Home", "Entrada principal do produto com resumo da proposta e atalhos para os módulos."],
         ["LobbyAnalyser.png", "Lobby analyser", "Leitura do lobby para comparar comps, mapa e confronto antes da partida."],
@@ -189,7 +220,7 @@ const portfolioDataPT = {
         "Engine com 95+ algoritmos",
         "Cripto, heurística e ML para scoring",
       ],
-      repoUrl: "https://github.com/Kraunser/Davinci_Decoder",
+      repoUrl: null,
       gallery: galleryFrom("davinci", [
         ["portfolio-shot-wide.png", "Wide layout", "Visão ampla da decode workstation e dos resultados."],
         ["portfolio-shot.png", "Workbench", "Tela principal com input de ciphertext e output priorizado."],
@@ -202,16 +233,16 @@ const portfolioDataPT = {
 const portfolioDataEN = {
   name: "Matheus Henrique da Silva Figueiredo Bueno",
   heroTitle:
-    "Full stack developer focused on web systems, automation, and AI-driven platforms.",
+    "Full stack developer focused on web products, automation, and AI-driven platforms.",
   headline:
-    "I build systems, platforms, and tools that solve real problems with web, automation, and AI.",
+    "I build complete platforms, product interfaces, and tools that solve real problems with web, automation, and AI.",
   about:
-    "I build web systems, automations, and internal tools focused on real-world use. I am interested in software that solves actual problems: operational platforms, APIs, AI flows, and interfaces that make sense in daily routines.",
+    "I build web products, automations, and internal tools focused on real-world use. I am interested in software that solves actual problems: operational platforms, APIs, AI flows, study routines, and interfaces that make sense in daily work.",
   services: [
     "Web systems for internal operations, support, and administrative control",
+    "Full stack products with authentication, databases, dashboards, and user flows",
     "AI platforms for analysis, recommendation, and workflow automation",
-    "Dashboards, panels, and products focused on real usage and clear navigation",
-    "Full stack architectures with frontend, backend, and external integrations",
+    "Product interfaces with clear navigation, real galleries, and technical narrative",
   ],
   skills: [
     "Next.js",
@@ -223,16 +254,16 @@ const portfolioDataEN = {
     "Python",
     "Flask",
     "SQLite",
-    "C#",
-    "WPF",
+    "Django REST",
+    "PostgreSQL",
     "Docker",
     "Socket.io",
     "UI Systems",
   ],
   workflow: [
     "I understand the problem, the user's routine, and the main surface of the product.",
-    "I turn the structure into a clear, navigable interface with consistent visual identity.",
-    "I validate responsiveness, presentation, and detail so the case feels strong in practice.",
+    "I structure backend, data, and interface around the core workflow with clarity.",
+    "I validate responsiveness, visual narrative, and detail so the case feels strong in practice.",
   ],
   contacts: [
     {
@@ -251,7 +282,7 @@ const portfolioDataEN = {
       href: "https://github.com/Kraunser",
     },
   ],
-  featuredCaseId: "gestao-ti",
+  featuredCaseId: "kairon",
   caseStudies: [
     {
       id: "gestao-ti",
@@ -275,7 +306,7 @@ const portfolioDataEN = {
         "SQLite + local configuration",
         "Tickets, assets, and internal utilities",
       ],
-      repoUrl: "https://github.com/Kraunser/ticket-manager-app",
+      repoUrl: null,
       gallery: galleryFrom("gestao-ti", [
         ["01-login.png", "Login", "Initial entry point to the internal demand portal."],
         ["02-forgot-password.png", "Recovery", "Forgot-password flow for internal access."],
@@ -294,6 +325,37 @@ const portfolioDataEN = {
         ["15-tools-service-manager.png", "Service manager", "Auxiliary flow for technical support."],
         ["16-tools-disk-cleanup.png", "Disk cleanup", "Integrated maintenance utility."],
         ["17-settings.png", "Settings", "General platform settings."],
+      ]),
+    },
+    {
+      id: "kairon",
+      accent: "#4f8cff",
+      initialShot: 2,
+      title: "Kairon",
+      category: "Student productivity platform",
+      summary:
+        "A full stack study routine platform with focus areas, task board, focus sessions, and gamification.",
+      description:
+        "Kairon structures academic productivity into a broader flow than a simple task manager. The product combines onboarding, workspace segmentation, operational board, focus sessions, and a progress layer built to reinforce consistency.",
+      stack: ["React", "TypeScript", "Django REST Framework", "PostgreSQL"],
+      highlights: [
+        "5 real screens covering landing, focus areas, board, focus flow, and gamified progress.",
+        "Full stack architecture with JWT authentication, workspace isolation, and an explicit backend service layer.",
+        "A wider product loop than CRUD alone: planning, execution, focus, and progress tracking.",
+      ],
+      architecture: [
+        "React + TypeScript + Vite",
+        "Django + DRF + JWT",
+        "PostgreSQL",
+        "Workspaces, tasks, focus, and gamification",
+      ],
+      repoUrl: null,
+      gallery: galleryFrom("kairon", [
+        ["01-auth-screen.png", "Auth and landing", "Product entry point with a clear promise, visual proof, and authentication flow."],
+        ["02-workspace-picker.png", "Focus areas", "Workspace selection to separate study routine, projects, and goals into distinct environments."],
+        ["03-board-dashboard.png", "Task board", "Main operational view with metrics, filters, columns, and actionable cards."],
+        ["04-focus-panel.png", "Focus session", "Focus flow with configurable duration and optional linking to an active task."],
+        ["05-progress-panel.png", "Progress and gamification", "Progress panel with level, streak, missions, and unlocked badges."],
       ]),
     },
     {
@@ -318,7 +380,7 @@ const portfolioDataEN = {
         "Redis + PostgreSQL",
         "RAG with PDFs and a knowledge engine",
       ],
-      repoUrl: "https://github.com/Kraunser/VTT_CoC",
+      repoUrl: null,
       gallery: galleryFrom("abyssalvtt", [
         ["vtt-login.png", "Entry", "Access screen with strong atmosphere and product identity."],
         ["vtt-builder-cadastro.png", "Guided creation", "Investigator onboarding flow with step-based creation."],
@@ -351,7 +413,7 @@ const portfolioDataEN = {
         "FastAPI AI service",
         "OverFast API + Gemini 2.5 Flash",
       ],
-      repoUrl: "https://github.com/Kraunser/ow-coach-ai",
+      repoUrl: null,
       gallery: galleryFrom("overtrack", [
         ["HomePage.png", "Home", "Main landing screen with a product overview and shortcuts to the core modules."],
         ["LobbyAnalyser.png", "Lobby analyzer", "Lobby reading to compare comps, map, and matchup before the round starts."],
@@ -383,7 +445,7 @@ const portfolioDataEN = {
         "Engine with 95+ algorithms",
         "Crypto, heuristics, and ML for scoring",
       ],
-      repoUrl: "https://github.com/Kraunser/Davinci_Decoder",
+      repoUrl: null,
       gallery: galleryFrom("davinci", [
         ["portfolio-shot-wide.png", "Wide layout", "Wide view of the decode workstation and the results area."],
         ["portfolio-shot.png", "Workbench", "Main screen with ciphertext input and prioritized output."],
@@ -420,11 +482,12 @@ const staticText = {
       "Se você quer conversar sobre projetos, engenharia de software ou oportunidades como desenvolvedor, pode me chamar.",
     metricsProjects: "projetos principais",
     metricsShots: "prints reais integrados",
-    metricsStack: "web, IA e desktop",
+    metricsStack: "web, IA e produto",
     screensCount: "telas",
     caseStudyLabel: "Case",
     architectureLabel: "Arquitetura",
     viewCode: "Ver código",
+    privateCode: "Código privado",
     talkAboutProject: "Conversar sobre o projeto",
     prevScreenAria: "Tela anterior",
     nextScreenAria: "Próxima tela",
@@ -456,11 +519,12 @@ const staticText = {
       "If you want to talk about projects, software engineering, or developer opportunities, feel free to reach out.",
     metricsProjects: "main projects",
     metricsShots: "real screenshots",
-    metricsStack: "web, AI, and desktop",
+    metricsStack: "web, AI, and product",
     screensCount: "screens",
     caseStudyLabel: "Case study",
     architectureLabel: "Architecture",
     viewCode: "View code",
+    privateCode: "Private code",
     talkAboutProject: "Talk about the project",
     prevScreenAria: "Previous screen",
     nextScreenAria: "Next screen",
@@ -739,11 +803,18 @@ function createCaseStudy(project, index) {
   const actions = document.createElement("div");
   actions.className = "case-actions";
 
-  const repoLink = document.createElement("a");
-  repoLink.className = "case-link case-link-primary";
-  repoLink.textContent = staticText[currentLang].viewCode;
-  applyLinkBehavior(repoLink, project.repoUrl);
-  actions.appendChild(repoLink);
+  if (project.repoUrl) {
+    const repoLink = document.createElement("a");
+    repoLink.className = "case-link case-link-primary";
+    repoLink.textContent = staticText[currentLang].viewCode;
+    applyLinkBehavior(repoLink, project.repoUrl);
+    actions.appendChild(repoLink);
+  } else {
+    const repoStatus = document.createElement("span");
+    repoStatus.className = "case-link case-link-primary case-link-disabled";
+    repoStatus.textContent = staticText[currentLang].privateCode;
+    actions.appendChild(repoStatus);
+  }
 
   const contactLink = document.createElement("a");
   contactLink.className = "case-link case-link-secondary";
