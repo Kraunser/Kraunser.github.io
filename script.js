@@ -107,14 +107,14 @@ const portfolioDataPT = {
       accent: "#4f8cff",
       initialShot: 2,
       title: "Kairon",
-      category: "Plataforma de produtividade para estudantes",
+      category: "Plataforma de produtividade em desenvolvimento",
       summary:
-        "Plataforma full stack para rotina de estudos com áreas de foco, board de tarefas, sessões de foco e gamificação.",
+        "Plataforma full stack em desenvolvimento para rotina de estudos, criada por mim em parceria com mais duas pessoas.",
       description:
-        "O Kairon organiza produtividade acadêmica em um fluxo mais completo do que um task manager simples. O produto combina onboarding, segmentação por workspace, board operacional, sessões de foco e uma camada de progresso para manter constância de estudo.",
+        "O Kairon está em desenvolvimento em colaboração com mais duas pessoas. O produto organiza produtividade acadêmica em um fluxo mais completo do que um task manager simples, combinando onboarding, segmentação por workspace, board operacional, sessões de foco e uma camada de progresso para manter constância de estudo.",
       stack: ["React", "TypeScript", "Django REST Framework", "PostgreSQL"],
       highlights: [
-        "5 telas reais cobrindo landing, áreas de foco, board, foco e progresso gamificado.",
+        "Projeto em andamento, desenvolvido por mim em parceria com mais duas pessoas, com 5 telas reais já integradas ao case.",
         "Arquitetura full stack com autenticação JWT, isolamento por workspace e service layer no backend.",
         "Fluxo de produto mais amplo que CRUD: planejamento, execução, foco e acompanhamento de evolução.",
       ],
@@ -332,14 +332,14 @@ const portfolioDataEN = {
       accent: "#4f8cff",
       initialShot: 2,
       title: "Kairon",
-      category: "Student productivity platform",
+      category: "Student productivity platform in progress",
       summary:
-        "A full stack study routine platform with focus areas, task board, focus sessions, and gamification.",
+        "A full stack study routine platform in progress, built by me in collaboration with two other people.",
       description:
-        "Kairon structures academic productivity into a broader flow than a simple task manager. The product combines onboarding, workspace segmentation, operational board, focus sessions, and a progress layer built to reinforce consistency.",
+        "Kairon is currently in development in collaboration with two other people. The product structures academic productivity into a broader flow than a simple task manager, combining onboarding, workspace segmentation, an operational board, focus sessions, and a progress layer built to reinforce consistency.",
       stack: ["React", "TypeScript", "Django REST Framework", "PostgreSQL"],
       highlights: [
-        "5 real screens covering landing, focus areas, board, focus flow, and gamified progress.",
+        "Work in progress, developed by me with two collaborators, with 5 real screens already integrated into the case.",
         "Full stack architecture with JWT authentication, workspace isolation, and an explicit backend service layer.",
         "A wider product loop than CRUD alone: planning, execution, focus, and progress tracking.",
       ],
