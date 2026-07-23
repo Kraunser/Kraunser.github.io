@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio | Matheus Henrique da Silva Figueiredo Bueno</title>
   <meta name="description"
-    content="Portfólio com projetos reais, galerias de produto e experiências em web, IA, automação e produtos full stack." />
+    content="Portfólio de Matheus Bueno com foco em suporte corporativo, automação e desenvolvimento de soluções web." />
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Syne:wght@500;600;700;800&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css?v=20260527-2" />
+  <link rel="stylesheet" href="./styles.css?v=20260723-1" />
 </head>
 
 <body>
@@ -32,9 +32,9 @@
         <a href="#sobre" data-i18n="navProfile">Perfil</a>
         <a href="#projetos" data-i18n="navProjects">Projetos</a>
         <a href="#contato" data-i18n="navContact">Contato</a>
-        <div class="lang-toggle">
-          <button class="lang-btn is-active" data-lang="pt" onclick="setLanguage('pt')">PT</button>
-          <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+        <div class="lang-toggle" role="group" aria-label="Selecionar idioma">
+          <button class="lang-btn is-active" type="button" data-lang="pt" aria-pressed="true" onclick="setLanguage('pt')">PT</button>
+          <button class="lang-btn" type="button" data-lang="en" aria-pressed="false" onclick="setLanguage('en')">EN</button>
         </div>
       </nav>
 
@@ -44,15 +44,19 @@
     <main id="home">
       <section class="hero">
         <div class="hero-copy reveal reveal-delay-1">
-          <p class="eyebrow" data-i18n="heroEyebrow">Portfólio 2026</p>
-          <h1 data-field="heroTitle">Desenvolvedor full stack focado em produtos web, automação e plataformas com IA.</h1>
+          <p class="eyebrow" data-i18n="heroEyebrow">Tecnologia aplicada à operação</p>
+          <h1 data-field="heroTitle">Profissional de TI focado em suporte, automação e desenvolvimento de soluções web.</h1>
           <p class="hero-text" data-field="headline">
-            Eu desenvolvo sistemas, plataformas e ferramentas que resolvem
-            problemas reais usando web, automação e IA.
+            Atuo com suporte corporativo e infraestrutura local, resolvendo incidentes,
+            apoiando usuários e contribuindo para a continuidade da operação.
+          </p>
+          <p class="hero-text hero-text-secondary" data-field="headlineSecondary">
+            Também desenvolvo sistemas, plataformas e automações que transformam
+            problemas reais em soluções mais organizadas, rastreáveis e eficientes.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#projetos" data-i18n="btnViewProjects">Ver projetos</a>
+            <a class="button button-primary" href="#gestao-ti" data-i18n="btnViewProjects">Ver Portal de Gestão de T.I.</a>
             <a class="button button-secondary" href="#contato" data-i18n="btnContact">Falar comigo</a>
           </div>
 
@@ -62,18 +66,18 @@
         <aside class="hero-spotlight reveal reveal-delay-2" id="hero-spotlight">
           <div class="spotlight-head">
             <span class="spotlight-label" data-i18n="spotlightCase">Case em foco</span>
-            <span class="spotlight-count" id="featured-count">00 telas</span>
+            <span class="spotlight-count" id="featured-count">17 telas</span>
           </div>
 
           <div class="spotlight-frame">
-            <img id="featured-image" src="./assets/gestao-ti/10-admin-dashboard.png"
-              alt="Preview do projeto em destaque" />
+            <img id="featured-image" src="./assets/gestao-ti/04-tickets-list.png"
+              alt="Fila principal de chamados do Portal de Gestão de T.I." />
           </div>
 
-          <p class="spotlight-category" id="featured-category">Sistema web</p>
-          <h2 id="featured-title" data-i18n="featuredProject">Projeto em destaque</h2>
+          <p class="spotlight-category" id="featured-category">Sistema web corporativo</p>
+          <h2 id="featured-title">Portal de Gestão de T.I.</h2>
           <p class="spotlight-text" id="featured-description">
-            Descrição do projeto em destaque.
+            Portal de gestão de T.I. com chamados, ativos, inventário, administração e utilitários internos na mesma experiência.
           </p>
 
           <div class="featured-tags" id="featured-tags"></div>
@@ -87,17 +91,28 @@
       <section class="section" id="sobre">
         <div class="section-heading">
           <p class="eyebrow" data-i18n="profileEyebrow">Perfil</p>
-          <h2 data-i18n="profileTitle">Código, design de interface e narrativa visual trabalhando juntos.</h2>
+          <h2 data-i18n="profileTitle">Experiência operacional com desenvolvimento aplicado.</h2>
         </div>
 
         <div class="bento-grid">
           <article class="bento-card bento-story">
             <span class="bento-label" data-i18n="bentoSummary">Resumo</span>
-            <p class="bento-text" data-field="about">
-              Atuo entre desenvolvimento, design de interface e automação para
-              transformar projetos em entregas mais sólidas e mais
-              apresentáveis.
-            </p>
+            <div class="bento-copy" id="about-copy">
+              <p class="bento-text">
+                Minha experiência profissional está concentrada em suporte de TI,
+                atendimento N1/N2, Windows, Microsoft 365, Active Directory, redes,
+                ativos e ambientes industriais.
+              </p>
+              <p class="bento-text">
+                Em paralelo, estudo e desenvolvo projetos pessoais utilizando tecnologias
+                como React, Next.js, TypeScript, Python, FastAPI, PostgreSQL e Docker.
+              </p>
+              <p class="bento-text">
+                Meu objetivo é unir conhecimento operacional e desenvolvimento para criar
+                soluções que façam sentido no uso diário, não apenas aplicações
+                tecnicamente interessantes.
+              </p>
+            </div>
           </article>
 
           <article class="bento-card">
@@ -134,10 +149,11 @@
         <div class="contact-panel">
           <div class="contact-copy">
             <p class="eyebrow" data-i18n="contactEyebrow">Contato</p>
-            <h2 data-i18n="contactTitle">Vamos conversar sobre software, produto e oportunidades.</h2>
+            <h2 data-i18n="contactTitle">Vamos conversar sobre tecnologia, suporte, automação e desenvolvimento.</h2>
             <p class="contact-text" data-i18n="contactIntro">
-              Se você quer conversar sobre projetos, engenharia de software ou
-              oportunidades como desenvolvedor, pode me chamar.
+              Estou aberto a oportunidades em que possa contribuir com minha experiência
+              operacional, capacidade de resolução de problemas e desenvolvimento de
+              soluções digitais.
             </p>
           </div>
 
@@ -147,7 +163,7 @@
     </main>
   </div>
 
-  <script src="./script.js?v=20260527-2"></script>
+  <script src="./script.js?v=20260723-1"></script>
 </body>
 
 </html>

@@ -8,16 +8,29 @@ const galleryFrom = (folder, entries) =>
 const portfolioDataPT = {
   name: "Matheus Henrique da Silva Figueiredo Bueno",
   heroTitle:
-    "Desenvolvedor full stack focado em produtos web, automação e plataformas com IA.",
+    "Profissional de TI focado em suporte, automação e desenvolvimento de soluções web.",
+  metaDescription:
+    "Portfólio de Matheus Bueno com foco em suporte corporativo, automação e desenvolvimento de soluções web.",
   headline:
-    "Eu desenvolvo plataformas completas, interfaces de produto e ferramentas que resolvem problemas reais com web, automação e IA.",
-  about:
-    "Desenvolvo produtos web, automações e ferramentas internas com foco em uso real. Me interesso por software que resolve problemas de verdade: plataformas operacionais, APIs, fluxos com IA, rotinas de estudo e interfaces que fazem sentido no dia a dia.",
+    "Atuo com suporte corporativo e infraestrutura local, resolvendo incidentes, apoiando usuários e contribuindo para a continuidade da operação.",
+  headlineSecondary:
+    "Também desenvolvo sistemas, plataformas e automações que transformam problemas reais em soluções mais organizadas, rastreáveis e eficientes.",
+  about: [
+    "Minha experiência profissional está concentrada em suporte de TI, atendimento N1/N2, Windows, Microsoft 365, Active Directory, redes, ativos e ambientes industriais.",
+    "Em paralelo, estudo e desenvolvo projetos pessoais utilizando tecnologias como React, Next.js, TypeScript, Python, FastAPI, PostgreSQL e Docker.",
+    "Meu objetivo é unir conhecimento operacional e desenvolvimento para criar soluções que façam sentido no uso diário, não apenas aplicações tecnicamente interessantes.",
+  ],
+  heroMetrics: [
+    { value: "17", label: "telas no Portal de Gestão de T.I." },
+    { value: "Suporte", label: "chamados, ativos e inventário" },
+    { value: "Full stack", label: "web e automação aplicados à operação" },
+  ],
   services: [
-    "Sistemas web para operação interna, atendimento e controle administrativo",
-    "Produtos full stack com autenticação, banco de dados, dashboards e fluxos de usuário",
-    "Plataformas com IA para análise, recomendação e automação de fluxo",
-    "Interfaces de produto com navegação clara, galerias reais e narrativa técnica",
+    "Suporte técnico e melhoria de processos de TI",
+    "Sistemas internos para atendimento, ativos e controle operacional",
+    "Automações para reduzir tarefas manuais e padronizar rotinas",
+    "Aplicações web com frontend, backend, banco de dados e autenticação",
+    "Plataformas pessoais envolvendo IA, análise de dados e colaboração",
   ],
   skills: [
     "Next.js",
@@ -27,6 +40,11 @@ const portfolioDataPT = {
     "Fastify",
     "FastAPI",
     "Python",
+    "PowerShell",
+    "Windows",
+    "Microsoft 365",
+    "Active Directory",
+    "Redes",
     "Flask",
     "SQLite",
     "Django REST",
@@ -36,9 +54,9 @@ const portfolioDataPT = {
     "UI Systems",
   ],
   workflow: [
-    "Entendo o problema, a rotina do usuário e a superfície principal do produto.",
-    "Estruturo backend, dados e interface para sustentar o fluxo principal com clareza.",
-    "Valido responsividade, narrativa visual e detalhes para que o case fique forte na prática.",
+    "Entendo o incidente, a rotina e o impacto para quem usa ou mantém o sistema.",
+    "Resolvo a necessidade imediata e identifico o que pode ser padronizado ou automatizado.",
+    "Uso desenvolvimento, dados e interface para tornar a operação mais clara, rastreável e sustentável.",
   ],
   contacts: [
     {
@@ -57,12 +75,12 @@ const portfolioDataPT = {
       href: "https://github.com/Kraunser",
     },
   ],
-  featuredCaseId: "kairon",
+  featuredCaseId: "gestao-ti",
   caseStudies: [
     {
       id: "gestao-ti",
       accent: "#6aa6ff",
-      initialShot: 9,
+      initialShot: 3,
       title: "Portal de Gestão de T.I.",
       category: "Sistema web corporativo",
       summary:
@@ -138,16 +156,16 @@ const portfolioDataPT = {
       accent: "#62f0c0",
       initialShot: 3,
       title: "AbyssalVTT",
-      category: "Plataforma colaborativa para RPG",
+      category: "Virtual tabletop para Call of Cthulhu",
       summary:
-        "Um virtual tabletop atmosférico para campanhas de Call of Cthulhu, com experiência distinta para mestre e jogador.",
+        "Um VTT que reúne mesa, fichas, regras, combate, navegação e ferramentas do Guardião em uma única sessão de Call of Cthulhu.",
       description:
-        "A seleção agora prioriza as telas que melhor vendem o produto: entrada, criação guiada, lobby, campanha ativa, ficha e grimório. O resultado fica mais cinematográfico e mais fácil de ler como case.",
+        "A galeria combina a jornada de entrada com os avanços mais recentes da mesa: planta interativa do navio, registro de avarias, clima com cálculo de navegação, encontros de combate, trilha sincronizada e compêndio de regras.",
       stack: ["React", "Vite", "Pixi.js", "Socket.io"],
       highlights: [
-        "Galeria curada com 7 telas-chave entre entrada, campanha, ficha e grimório.",
-        "Direção de arte náutica e lovecraftiana aplicada do acesso inicial até a mesa ativa.",
-        "Fluxos distintos para descoberta da campanha, criação guiada e consulta durante a sessão.",
+        "8 telas curadas entre acesso, campanha, ficha e ferramentas atuais da sessão.",
+        "Navio interativo, clima, navegação e encontros transformam estado de jogo em decisões operacionais.",
+        "Mesa sonora e compêndio CoC reduzem a troca de ferramentas durante a campanha.",
       ],
       architecture: [
         "React + Vite + Pixi.js",
@@ -158,12 +176,13 @@ const portfolioDataPT = {
       repoUrl: null,
       gallery: galleryFrom("abyssalvtt", [
         ["vtt-login.png", "Entrada", "Tela de acesso com atmosfera forte e identidade do universo do produto."],
-        ["vtt-builder-cadastro.png", "Criação guiada", "Fluxo de cadastro do investigador com onboarding orientado por etapas."],
-        ["vtt-lobby.png", "Porto das Sombras", "Entrada da experiência com campanha em destaque e leitura mais editorial."],
         ["vtt-campaign-lobby.png", "Lobby da campanha", "Visão da campanha ativa com ficha selecionada e resumo pronto para entrar na sessão."],
         ["vtt-ficha-dashboard.png", "Ficha do investigador", "Dashboard da ficha com atributos, recursos e leitura rápida de estado."],
-        ["vtt-gm-grimorio.png", "Grimório", "Consulta de conhecimento e PDF integrado ao fluxo da mesa."],
-        ["vtt-player-grimorio.png", "Mesa ativa", "Uso simultâneo de ficha e grimório durante a sessão em andamento."],
+        ["vtt-current-ship-damage.png", "Navio e avarias", "Planta interativa do navio com compartimentos, status e registro visual de danos."],
+        ["vtt-current-weather-navigation.png", "Clima e navegação", "Tempestade ativa alterando a velocidade do navio e apoiando o cálculo de viagem."],
+        ["vtt-current-combat-encounter.png", "Encontro de combate", "Preparação de encontro com objetivo, criaturas, atributos e início do rastreador."],
+        ["vtt-current-soundboard.png", "Mesa sonora", "Trilhas sincronizadas e efeitos de cena organizados dentro da campanha."],
+        ["vtt-current-rules-compendium.png", "Regras e compêndio", "Consulta centralizada de regras, perícias, criaturas, armas, ocupações e livros."],
       ]),
     },
     {
@@ -233,16 +252,29 @@ const portfolioDataPT = {
 const portfolioDataEN = {
   name: "Matheus Henrique da Silva Figueiredo Bueno",
   heroTitle:
-    "Full stack developer focused on web products, automation, and AI-driven platforms.",
+    "IT professional focused on support, automation, and web solution development.",
+  metaDescription:
+    "Matheus Bueno's portfolio focused on corporate IT support, automation, and web solution development.",
   headline:
-    "I build complete platforms, product interfaces, and tools that solve real problems with web, automation, and AI.",
-  about:
-    "I build web products, automations, and internal tools focused on real-world use. I am interested in software that solves actual problems: operational platforms, APIs, AI flows, study routines, and interfaces that make sense in daily work.",
+    "I work with corporate support and local infrastructure, resolving incidents, assisting users, and helping maintain operational continuity.",
+  headlineSecondary:
+    "I also build systems, platforms, and automations that turn real-world problems into more organized, traceable, and efficient solutions.",
+  about: [
+    "My professional experience is centered on IT support, N1/N2 service, Windows, Microsoft 365, Active Directory, networks, assets, and industrial environments.",
+    "In parallel, I study and develop personal projects using technologies such as React, Next.js, TypeScript, Python, FastAPI, PostgreSQL, and Docker.",
+    "My goal is to combine operational knowledge and development to create solutions that make sense in everyday use, not just technically interesting applications.",
+  ],
+  heroMetrics: [
+    { value: "17", label: "screens in the IT Management Portal" },
+    { value: "Support", label: "tickets, assets, and inventory" },
+    { value: "Full stack", label: "web and automation applied to operations" },
+  ],
   services: [
-    "Web systems for internal operations, support, and administrative control",
-    "Full stack products with authentication, databases, dashboards, and user flows",
-    "AI platforms for analysis, recommendation, and workflow automation",
-    "Product interfaces with clear navigation, real galleries, and technical narrative",
+    "Technical support and IT process improvement",
+    "Internal systems for service, assets, and operational control",
+    "Automations that reduce manual tasks and standardize routines",
+    "Web applications with frontend, backend, databases, and authentication",
+    "Personal platforms involving AI, data analysis, and collaboration",
   ],
   skills: [
     "Next.js",
@@ -252,6 +284,11 @@ const portfolioDataEN = {
     "Fastify",
     "FastAPI",
     "Python",
+    "PowerShell",
+    "Windows",
+    "Microsoft 365",
+    "Active Directory",
+    "Networks",
     "Flask",
     "SQLite",
     "Django REST",
@@ -261,9 +298,9 @@ const portfolioDataEN = {
     "UI Systems",
   ],
   workflow: [
-    "I understand the problem, the user's routine, and the main surface of the product.",
-    "I structure backend, data, and interface around the core workflow with clarity.",
-    "I validate responsiveness, visual narrative, and detail so the case feels strong in practice.",
+    "I understand the incident, the routine, and the impact on the people using or maintaining the system.",
+    "I address the immediate need and identify what can be standardized or automated.",
+    "I use development, data, and interface design to make operations clearer, traceable, and sustainable.",
   ],
   contacts: [
     {
@@ -282,12 +319,12 @@ const portfolioDataEN = {
       href: "https://github.com/Kraunser",
     },
   ],
-  featuredCaseId: "kairon",
+  featuredCaseId: "gestao-ti",
   caseStudies: [
     {
       id: "gestao-ti",
       accent: "#6aa6ff",
-      initialShot: 9,
+      initialShot: 3,
       title: "IT Management Portal",
       category: "Corporate web system",
       summary:
@@ -363,16 +400,16 @@ const portfolioDataEN = {
       accent: "#62f0c0",
       initialShot: 3,
       title: "AbyssalVTT",
-      category: "Collaborative RPG platform",
+      category: "Virtual tabletop for Call of Cthulhu",
       summary:
-        "An atmospheric virtual tabletop for Call of Cthulhu campaigns, with distinct experiences for game master and player.",
+        "A VTT that brings the table, investigator sheets, rules, combat, navigation, and Keeper tools into a single Call of Cthulhu session.",
       description:
-        "This selection prioritizes the screens that best communicate the product: entry, guided creation, lobby, active campaign, investigator sheet, and grimoire. The result feels more cinematic and easier to read as a case study.",
+        "The gallery combines the entry journey with the latest table features: an interactive ship plan, damage log, weather-driven navigation, combat encounters, synchronized audio, and a rules compendium.",
       stack: ["React", "Vite", "Pixi.js", "Socket.io"],
       highlights: [
-        "Curated gallery with 7 key screens across entry, campaign, sheet, and grimoire.",
-        "Nautical and Lovecraftian art direction from first access to the active table.",
-        "Distinct flows for campaign discovery, guided creation, and in-session consultation.",
+        "8 curated screens across access, campaign, investigator sheet, and current session tools.",
+        "Interactive ship, weather, navigation, and encounters turn game state into operational decisions.",
+        "Synchronized audio and the CoC compendium reduce context switching during the campaign.",
       ],
       architecture: [
         "React + Vite + Pixi.js",
@@ -383,12 +420,13 @@ const portfolioDataEN = {
       repoUrl: null,
       gallery: galleryFrom("abyssalvtt", [
         ["vtt-login.png", "Entry", "Access screen with strong atmosphere and product identity."],
-        ["vtt-builder-cadastro.png", "Guided creation", "Investigator onboarding flow with step-based creation."],
-        ["vtt-lobby.png", "Harbor of Shadows", "Entry point with the featured campaign and a more editorial presentation."],
         ["vtt-campaign-lobby.png", "Campaign lobby", "Active campaign view with selected sheet and a ready-to-play summary."],
         ["vtt-ficha-dashboard.png", "Investigator sheet", "Character dashboard with attributes, resources, and quick state reading."],
-        ["vtt-gm-grimorio.png", "Grimoire", "Knowledge consultation and integrated PDF flow for the table."],
-        ["vtt-player-grimorio.png", "Active table", "Sheet and grimoire being used together during the session."],
+        ["vtt-current-ship-damage.png", "Ship and damage", "Interactive ship plan with compartments, status, and a visual damage log."],
+        ["vtt-current-weather-navigation.png", "Weather and navigation", "An active storm changing ship speed and supporting travel-time calculation."],
+        ["vtt-current-combat-encounter.png", "Combat encounter", "Encounter setup with an objective, creatures, stats, and tracker launch."],
+        ["vtt-current-soundboard.png", "Session soundboard", "Synchronized tracks and scene effects organized inside the campaign."],
+        ["vtt-current-rules-compendium.png", "Rules and compendium", "Centralized access to rules, skills, creatures, weapons, occupations, and books."],
       ]),
     },
     {
@@ -457,17 +495,17 @@ const portfolioDataEN = {
 
 const staticText = {
   pt: {
-    heroEyebrow: "Portfólio 2026",
+    heroEyebrow: "Tecnologia aplicada à operação",
     navProfile: "Perfil",
     navProjects: "Projetos",
     navContact: "Contato",
     navCta: "Vamos conversar",
-    btnViewProjects: "Ver projetos",
+    btnViewProjects: "Ver Portal de Gestão de T.I.",
     btnContact: "Falar comigo",
     spotlightCase: "Case em foco",
     openCase: "Abrir case completo",
     profileEyebrow: "Perfil",
-    profileTitle: "Código, design de interface e narrativa visual trabalhando juntos.",
+    profileTitle: "Experiência operacional com desenvolvimento aplicado.",
     bentoSummary: "Resumo",
     bentoDeliver: "O que eu entrego",
     bentoStack: "Stack principal",
@@ -477,12 +515,9 @@ const staticText = {
     projectsIntro:
       "Cada projeto abaixo mostra produto real, fluxo navegável, stack e a arquitetura principal por trás da entrega.",
     contactEyebrow: "Contato",
-    contactTitle: "Vamos conversar sobre software, produto e oportunidades.",
+    contactTitle: "Vamos conversar sobre tecnologia, suporte, automação e desenvolvimento.",
     contactIntro:
-      "Se você quer conversar sobre projetos, engenharia de software ou oportunidades como desenvolvedor, pode me chamar.",
-    metricsProjects: "projetos principais",
-    metricsShots: "prints reais integrados",
-    metricsStack: "web, IA e produto",
+      "Estou aberto a oportunidades em que possa contribuir com minha experiência operacional, capacidade de resolução de problemas e desenvolvimento de soluções digitais.",
     screensCount: "telas",
     caseStudyLabel: "Case",
     architectureLabel: "Arquitetura",
@@ -491,20 +526,21 @@ const staticText = {
     talkAboutProject: "Conversar sobre o projeto",
     prevScreenAria: "Tela anterior",
     nextScreenAria: "Próxima tela",
+    languageSelectorLabel: "Selecionar idioma",
     portfolioTitle: "Portfólio",
   },
   en: {
-    heroEyebrow: "Portfolio 2026",
+    heroEyebrow: "Technology applied to operations",
     navProfile: "Profile",
     navProjects: "Projects",
     navContact: "Contact",
     navCta: "Let's talk",
-    btnViewProjects: "View projects",
+    btnViewProjects: "View IT Management Portal",
     btnContact: "Contact me",
     spotlightCase: "Featured case",
     openCase: "Open full case",
     profileEyebrow: "Profile",
-    profileTitle: "Code, interface design, and visual narrative working together.",
+    profileTitle: "Operational experience with applied development.",
     bentoSummary: "Summary",
     bentoDeliver: "What I deliver",
     bentoStack: "Main stack",
@@ -514,12 +550,9 @@ const staticText = {
     projectsIntro:
       "Each project below shows a real product, navigable flow, stack, and the main architecture behind the delivery.",
     contactEyebrow: "Contact",
-    contactTitle: "Let's talk about software, product, and opportunities.",
+    contactTitle: "Let's talk about technology, support, automation, and development.",
     contactIntro:
-      "If you want to talk about projects, software engineering, or developer opportunities, feel free to reach out.",
-    metricsProjects: "main projects",
-    metricsShots: "real screenshots",
-    metricsStack: "web, AI, and product",
+      "I am open to opportunities where I can contribute my operational experience, problem-solving skills, and ability to develop digital solutions.",
     screensCount: "screens",
     caseStudyLabel: "Case study",
     architectureLabel: "Architecture",
@@ -528,6 +561,7 @@ const staticText = {
     talkAboutProject: "Talk about the project",
     prevScreenAria: "Previous screen",
     nextScreenAria: "Next screen",
+    languageSelectorLabel: "Select language",
     portfolioTitle: "Portfolio",
   },
 };
@@ -566,11 +600,6 @@ function createMetric(value, label) {
 }
 
 function renderHero() {
-  const totalShots = portfolioData.caseStudies.reduce(
-    (sum, project) => sum + project.gallery.length,
-    0
-  );
-  const projectCount = String(portfolioData.caseStudies.length).padStart(2, "0");
   const t = staticText[currentLang];
 
   const metricList = document.getElementById("hero-metrics");
@@ -578,11 +607,7 @@ function renderHero() {
   metricList.replaceChildren();
   featuredTags.replaceChildren();
 
-  [
-    [projectCount, t.metricsProjects],
-    [String(totalShots), t.metricsShots],
-    ["Full stack", t.metricsStack],
-  ].forEach(([value, label]) => {
+  portfolioData.heroMetrics.forEach(({ value, label }) => {
     metricList.appendChild(createMetric(value, label));
   });
 
@@ -611,15 +636,25 @@ function renderProfile() {
   setText("name", portfolioData.name);
   setText("heroTitle", portfolioData.heroTitle);
   setText("headline", portfolioData.headline);
-  setText("about", portfolioData.about);
+  setText("headlineSecondary", portfolioData.headlineSecondary);
   document.title = `${staticText[currentLang].portfolioTitle} | ${portfolioData.name}`;
+  document.querySelector('meta[name="description"]').content = portfolioData.metaDescription;
 
+  const aboutCopy = document.getElementById("about-copy");
   const servicesList = document.getElementById("services-list");
   const skillsList = document.getElementById("skills-list");
   const workflowList = document.getElementById("workflow-list");
+  aboutCopy.replaceChildren();
   servicesList.replaceChildren();
   skillsList.replaceChildren();
   workflowList.replaceChildren();
+
+  portfolioData.about.forEach((paragraph) => {
+    const text = document.createElement("p");
+    text.className = "bento-text";
+    text.textContent = paragraph;
+    aboutCopy.appendChild(text);
+  });
 
   portfolioData.services.forEach((service) => {
     const item = document.createElement("li");
@@ -861,8 +896,12 @@ function applyStaticTranslations() {
 }
 
 function updateLanguageButtons() {
+  const t = staticText[currentLang];
+  document.querySelector(".lang-toggle").setAttribute("aria-label", t.languageSelectorLabel);
   document.querySelectorAll(".lang-btn").forEach((button) => {
-    button.classList.toggle("is-active", button.dataset.lang === currentLang);
+    const isActive = button.dataset.lang === currentLang;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
   });
 }
 

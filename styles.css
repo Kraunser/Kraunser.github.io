@@ -196,6 +196,7 @@ button {
 }
 
 .hero-copy {
+  min-width: 0;
   padding: clamp(2rem, 5vw, 4rem);
   border-radius: var(--radius-xl);
 }
@@ -233,8 +234,9 @@ button {
 }
 
 .hero h1 {
-  max-width: 12ch;
-  font-size: clamp(2.9rem, 5.6vw, 4.6rem);
+  max-width: 18ch;
+  font-size: clamp(2.35rem, 3.75vw, 3.35rem);
+  line-height: 0.98;
 }
 
 .hero-text,
@@ -253,6 +255,10 @@ button {
   max-width: 44rem;
   margin: 1.4rem 0 0;
   font-size: 1.06rem;
+}
+
+.hero-text-secondary {
+  margin-top: 0.8rem;
 }
 
 .hero-actions {
@@ -472,6 +478,15 @@ button {
 
 .bento-text {
   max-width: 46rem;
+}
+
+.bento-copy {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.bento-copy .bento-text {
+  margin: 0;
 }
 
 .bento-list,
@@ -799,7 +814,13 @@ button {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(300px, 0.85fr);
   gap: 1.2rem;
+  min-width: 0;
   padding: clamp(1.4rem, 4vw, 2.6rem);
+}
+
+.contact-copy,
+.contact-links {
+  min-width: 0;
 }
 
 .contact-links {
@@ -811,6 +832,7 @@ button {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+  min-width: 0;
   align-items: center;
   padding: 1rem 1.1rem;
   border-radius: 18px;
@@ -820,6 +842,11 @@ button {
 
 .contact-link span {
   color: var(--muted);
+}
+
+.contact-link strong {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .reveal {
@@ -997,6 +1024,11 @@ button {
 }
 
 @media (max-width: 520px) {
+  .glow {
+    width: 20rem;
+    height: 20rem;
+  }
+
   .page-shell {
     width: calc(100% - 0.75rem);
     padding-top: 0.75rem;
@@ -1019,7 +1051,8 @@ button {
   }
 
   .hero h1 {
-    font-size: 2.35rem;
+    font-size: 2.05rem;
+    overflow-wrap: anywhere;
   }
 
   .hero-actions,
