@@ -366,6 +366,7 @@ button {
 .spotlight-frame img {
   aspect-ratio: 16 / 10;
   object-fit: cover;
+  object-position: top;
 }
 
 .spotlight-category {
@@ -717,6 +718,24 @@ button {
   object-fit: contain;
   border-radius: 16px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.26);
+}
+
+.gallery-full-page .gallery-canvas {
+  display: block;
+  height: 32rem;
+  min-height: 0;
+  overflow: auto;
+}
+
+.gallery-full-page .gallery-image {
+  display: block;
+  height: auto;
+  max-height: none;
+}
+
+.gallery-full-page .gallery-canvas:focus-visible {
+  outline: 2px solid var(--project-accent);
+  outline-offset: 3px;
 }
 
 .gallery-caption {

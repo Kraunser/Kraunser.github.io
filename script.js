@@ -22,7 +22,7 @@ const portfolioDataPT = {
   ],
   heroMetrics: [
     { value: "Pradeli", label: "educação física e saúde" },
-    { value: "5 telas", label: "planejamento e jornada do aluno" },
+    { value: "PC + celular", label: "12 capturas completas" },
     { value: "Full stack", label: "Next.js, TypeScript e FastAPI" },
   ],
   services: [
@@ -143,12 +143,20 @@ const portfolioDataPT = {
         "Programas versionados, check-ins e vínculos de acompanhamento",
       ],
       repoUrl: null,
+      fullPageGallery: true,
       gallery: galleryFrom("pradeli", [
-        ["01-planning.png", "Planejamento individual", "Avaliação, objetivos e prioridades do programa em uma captura com dados de demonstração."],
-        ["02-training-cycle.png", "Ciclo de treino", "Metas por exercício e semana, com séries, repetições, esforço percebido e descanso."],
-        ["03-student-today.png", "Hoje no celular", "Treino do dia e atalhos de acompanhamento na experiência mobile do aluno."],
-        ["04-workout.png", "Execução do treino", "Registro de carga e repetições, timer e conclusão da sessão pelo celular."],
-        ["05-workspaces.png", "Espaços e vínculos", "Gestão de participações e associação do acompanhamento ao espaço, sem compartilhamento automático do histórico."],
+        ["homepage-desktop.jpg","Homepage · PC","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
+        ["homepage-mobile.jpg","Homepage · Celular","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
+        ["dashboard-desktop.jpg","Painel profissional · PC","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
+        ["dashboard-mobile.jpg","Painel profissional · Celular","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
+        ["planning-desktop.jpg","Planejamento · PC","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
+        ["planning-mobile.jpg","Planejamento · Celular","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
+        ["student-today-desktop.jpg","Hoje · PC","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
+        ["student-today-mobile.jpg","Hoje · Celular","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
+        ["workout-desktop.jpg","Execução do treino · PC","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
+        ["workout-mobile.jpg","Execução do treino · Celular","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
+        ["workspaces-desktop.jpg","Espaços · PC","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
+        ["workspaces-mobile.jpg","Espaços · Celular","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
       ]),
     },
     {
@@ -297,7 +305,7 @@ const portfolioDataEN = {
   ],
   heroMetrics: [
     { value: "Pradeli", label: "fitness and health" },
-    { value: "5 screens", label: "planning and student journey" },
+    { value: "Desktop + mobile", label: "12 full-page screenshots" },
     { value: "Full stack", label: "Next.js, TypeScript, and FastAPI" },
   ],
   services: [
@@ -418,12 +426,20 @@ const portfolioDataEN = {
         "Versioned programs, check-ins, and follow-up relationships",
       ],
       repoUrl: null,
+      fullPageGallery: true,
       gallery: galleryFrom("pradeli", [
-        ["01-planning.png", "Individual planning", "Assessment, goals, and program priorities shown with demo data."],
-        ["02-training-cycle.png", "Training cycle", "Weekly exercise targets for sets, repetitions, perceived exertion, and rest."],
-        ["03-student-today.png", "Today on mobile", "Today's workout and follow-up shortcuts in the student's mobile experience."],
-        ["04-workout.png", "Workout execution", "Load and repetition records, a timer, and mobile session completion."],
-        ["05-workspaces.png", "Workspaces and relationships", "Membership management and workspace-linked follow-up without automatically sharing historical records."],
+        ["homepage-desktop.jpg","Homepage · Desktop","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
+        ["homepage-mobile.jpg","Homepage · Mobile","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
+        ["dashboard-desktop.jpg","Professional dashboard · Desktop","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
+        ["dashboard-mobile.jpg","Professional dashboard · Mobile","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
+        ["planning-desktop.jpg","Planning · Desktop","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
+        ["planning-mobile.jpg","Planning · Mobile","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
+        ["student-today-desktop.jpg","Today · Desktop","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
+        ["student-today-mobile.jpg","Today · Mobile","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
+        ["workout-desktop.jpg","Workout execution · Desktop","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
+        ["workout-mobile.jpg","Workout execution · Mobile","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
+        ["workspaces-desktop.jpg","Workspaces · Desktop","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
+        ["workspaces-mobile.jpg","Workspaces · Mobile","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
       ]),
     },
     {
@@ -760,6 +776,20 @@ function createGallery(project) {
   `;
 
   const image = shell.querySelector(".gallery-image");
+  const canvas = shell.querySelector(".gallery-canvas");
+  let originalLink;
+  if (project.fullPageGallery) {
+    shell.classList.add("gallery-full-page");
+    canvas.tabIndex = 0;
+    canvas.setAttribute("role", "region");
+    canvas.setAttribute("aria-label", currentLang === "pt" ? "Captura completa: role para explorar" : "Full screenshot: scroll to explore");
+    originalLink = document.createElement("a");
+    originalLink.className = "inline-link";
+    originalLink.target = "_blank";
+    originalLink.rel = "noopener noreferrer";
+    originalLink.textContent = currentLang === "pt" ? "Abrir captura completa ↗" : "Open full screenshot ↗";
+    shell.querySelector(".gallery-caption").appendChild(originalLink);
+  }
   const counter = shell.querySelector(".gallery-counter");
   const title = shell.querySelector(".gallery-title");
   const note = shell.querySelector(".gallery-note");
@@ -786,6 +816,8 @@ function createGallery(project) {
     const shot = project.gallery[index];
     activeIndex = index;
     image.src = shot.src;
+    canvas.scrollTop = 0;
+    if (originalLink) originalLink.href = shot.src;
     image.alt = `${shot.label} - ${project.title}`;
     title.textContent = shot.label;
     note.textContent = shot.note;
