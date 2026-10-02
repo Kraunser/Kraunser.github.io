@@ -1,6 +1,8 @@
 const galleryFrom = (folder, entries) =>
-  entries.map(([file, label, note]) => ({
+  entries.map(([file, label, note, fullFile]) => ({
     src: `./assets/${folder}/${file}`,
+    fullSrc: fullFile ? `./assets/${folder}/${fullFile}` : null,
+    mobile: file.endsWith("-mobile-preview.jpg"),
     label,
     note,
   }));
@@ -146,17 +148,17 @@ const portfolioDataPT = {
       fullPageGallery: true,
       gallery: galleryFrom("pradeli", [
         ["homepage-desktop.jpg","Homepage · PC","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
-        ["homepage-mobile.jpg","Homepage · Celular","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
+        ["homepage-mobile-preview.jpg","Homepage · Celular","Prévia da tela do celular. Abra a captura completa para explorar a página inteira. Dados de demonstração.","homepage-mobile.jpg"],
         ["dashboard-desktop.jpg","Painel profissional · PC","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
-        ["dashboard-mobile.jpg","Painel profissional · Celular","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
+        ["dashboard-mobile-preview.jpg","Painel profissional · Celular","Prévia da tela do celular. Abra a captura completa para explorar a página inteira. Dados de demonstração.","dashboard-mobile.jpg"],
         ["planning-desktop.jpg","Planejamento · PC","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
-        ["planning-mobile.jpg","Planejamento · Celular","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
+        ["planning-mobile-preview.jpg","Planejamento · Celular","Prévia da tela do celular. Abra a captura completa para explorar a página inteira. Dados de demonstração.","planning-mobile.jpg"],
         ["student-today-desktop.jpg","Hoje · PC","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
-        ["student-today-mobile.jpg","Hoje · Celular","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
+        ["student-today-mobile-preview.jpg","Hoje · Celular","Prévia da tela do celular. Abra a captura completa para explorar a página inteira. Dados de demonstração.","student-today-mobile.jpg"],
         ["workout-desktop.jpg","Execução do treino · PC","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
-        ["workout-mobile.jpg","Execução do treino · Celular","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
+        ["workout-mobile-preview.jpg","Execução do treino · Celular","Prévia da tela do celular. Abra a captura completa para explorar a página inteira. Dados de demonstração.","workout-mobile.jpg"],
         ["workspaces-desktop.jpg","Espaços · PC","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
-        ["workspaces-mobile.jpg","Espaços · Celular","Captura completa. Role a imagem ou abra o arquivo original para ver todos os detalhes. Dados de demonstração."],
+        ["workspaces-mobile-preview.jpg","Espaços · Celular","Prévia da tela do celular. Abra a captura completa para explorar a página inteira. Dados de demonstração.","workspaces-mobile.jpg"],
       ]),
     },
     {
@@ -429,17 +431,17 @@ const portfolioDataEN = {
       fullPageGallery: true,
       gallery: galleryFrom("pradeli", [
         ["homepage-desktop.jpg","Homepage · Desktop","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
-        ["homepage-mobile.jpg","Homepage · Mobile","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
+        ["homepage-mobile-preview.jpg","Homepage · Mobile","Mobile viewport preview. Open the full screenshot to explore the entire page. Demo data.","homepage-mobile.jpg"],
         ["dashboard-desktop.jpg","Professional dashboard · Desktop","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
-        ["dashboard-mobile.jpg","Professional dashboard · Mobile","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
+        ["dashboard-mobile-preview.jpg","Professional dashboard · Mobile","Mobile viewport preview. Open the full screenshot to explore the entire page. Demo data.","dashboard-mobile.jpg"],
         ["planning-desktop.jpg","Planning · Desktop","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
-        ["planning-mobile.jpg","Planning · Mobile","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
+        ["planning-mobile-preview.jpg","Planning · Mobile","Mobile viewport preview. Open the full screenshot to explore the entire page. Demo data.","planning-mobile.jpg"],
         ["student-today-desktop.jpg","Today · Desktop","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
-        ["student-today-mobile.jpg","Today · Mobile","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
+        ["student-today-mobile-preview.jpg","Today · Mobile","Mobile viewport preview. Open the full screenshot to explore the entire page. Demo data.","student-today-mobile.jpg"],
         ["workout-desktop.jpg","Workout execution · Desktop","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
-        ["workout-mobile.jpg","Workout execution · Mobile","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
+        ["workout-mobile-preview.jpg","Workout execution · Mobile","Mobile viewport preview. Open the full screenshot to explore the entire page. Demo data.","workout-mobile.jpg"],
         ["workspaces-desktop.jpg","Workspaces · Desktop","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
-        ["workspaces-mobile.jpg","Workspaces · Mobile","Full-page screenshot. Scroll the image or open the original file to see all details. Demo data."],
+        ["workspaces-mobile-preview.jpg","Workspaces · Mobile","Mobile viewport preview. Open the full screenshot to explore the entire page. Demo data.","workspaces-mobile.jpg"],
       ]),
     },
     {
@@ -817,7 +819,8 @@ function createGallery(project) {
     activeIndex = index;
     image.src = shot.src;
     canvas.scrollTop = 0;
-    if (originalLink) originalLink.href = shot.src;
+    shell.classList.toggle("gallery-mobile-preview", shot.mobile);
+    if (originalLink) originalLink.href = shot.fullSrc ?? shot.src;
     image.alt = `${shot.label} - ${project.title}`;
     title.textContent = shot.label;
     note.textContent = shot.note;

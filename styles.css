@@ -738,6 +738,16 @@ button {
   outline-offset: 3px;
 }
 
+.gallery-mobile-preview .gallery-canvas {
+  height: auto;
+}
+
+.gallery-mobile-preview .gallery-image {
+  width: 100%;
+  max-width: 379px;
+  margin-inline: auto;
+}
+
 .gallery-caption {
   display: grid;
   gap: 0.45rem;
