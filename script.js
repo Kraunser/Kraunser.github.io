@@ -21,9 +21,9 @@ const portfolioDataPT = {
     "Meu objetivo é unir conhecimento operacional e desenvolvimento para criar soluções que façam sentido no uso diário, não apenas aplicações tecnicamente interessantes.",
   ],
   heroMetrics: [
-    { value: "17", label: "telas no Portal de Gestão de T.I." },
-    { value: "Suporte", label: "chamados, ativos e inventário" },
-    { value: "Full stack", label: "web e automação aplicados à operação" },
+    { value: "Pradeli", label: "educação física e saúde" },
+    { value: "5 telas", label: "planejamento e jornada do aluno" },
+    { value: "Full stack", label: "Next.js, TypeScript e FastAPI" },
   ],
   services: [
     "Suporte técnico e melhoria de processos de TI",
@@ -75,7 +75,7 @@ const portfolioDataPT = {
       href: "https://github.com/Kraunser",
     },
   ],
-  featuredCaseId: "gestao-ti",
+  featuredCaseId: "pradeli",
   caseStudies: [
     {
       id: "gestao-ti",
@@ -118,6 +118,37 @@ const portfolioDataPT = {
         ["15-tools-service-manager.png", "Service manager", "Fluxo auxiliar para suporte técnico."],
         ["16-tools-disk-cleanup.png", "Limpeza de disco", "Utilitário integrado para manutenção."],
         ["17-settings.png", "Configurações", "Ajustes gerais da plataforma."],
+      ]),
+    },
+    {
+      id: "pradeli",
+      accent: "#62c9bd",
+      initialShot: 0,
+      title: "Pradeli Movimento",
+      category: "Educação física e saúde · Em desenvolvimento",
+      summary:
+        "Plataforma full stack para conectar o planejamento do profissional de Educação Física à rotina de treino e acompanhamento do aluno.",
+      description:
+        "O núcleo atual reúne programas de treino versionados, agenda, check-ins e execução pelo celular. Desenvolvo a solução com Next.js, TypeScript e FastAPI, com autorização no servidor por vínculo profissional–aluno. A evolução multidisciplinar prevê Nutrição e Fisioterapia, ainda não implementadas. As capturas usam dados de demonstração.",
+      stack: ["Next.js", "React", "TypeScript", "FastAPI", "SQLAlchemy", "SQLite", "Alembic"],
+      highlights: [
+        "Planejamento individual com prioridades, exercícios e metas de séries, repetições e RPE por semana.",
+        "Jornada mobile com treino do dia, registro de execução, timer e check-ins com destinatários escolhidos pelo aluno.",
+        "Espaços, convites e vínculos contextuais; PostgreSQL e produção ainda em homologação pendente.",
+      ],
+      architecture: [
+        "Next.js + React + TypeScript",
+        "API REST com FastAPI + sessões em cookie HttpOnly",
+        "SQLAlchemy + SQLite + migrações Alembic",
+        "Programas versionados, check-ins e vínculos de acompanhamento",
+      ],
+      repoUrl: null,
+      gallery: galleryFrom("pradeli", [
+        ["01-planning.png", "Planejamento individual", "Avaliação, objetivos e prioridades do programa em uma captura com dados de demonstração."],
+        ["02-training-cycle.png", "Ciclo de treino", "Metas por exercício e semana, com séries, repetições, esforço percebido e descanso."],
+        ["03-student-today.png", "Hoje no celular", "Treino do dia e atalhos de acompanhamento na experiência mobile do aluno."],
+        ["04-workout.png", "Execução do treino", "Registro de carga e repetições, timer e conclusão da sessão pelo celular."],
+        ["05-workspaces.png", "Espaços e vínculos", "Gestão de participações e associação do acompanhamento ao espaço, sem compartilhamento automático do histórico."],
       ]),
     },
     {
@@ -265,9 +296,9 @@ const portfolioDataEN = {
     "My goal is to combine operational knowledge and development to create solutions that make sense in everyday use, not just technically interesting applications.",
   ],
   heroMetrics: [
-    { value: "17", label: "screens in the IT Management Portal" },
-    { value: "Support", label: "tickets, assets, and inventory" },
-    { value: "Full stack", label: "web and automation applied to operations" },
+    { value: "Pradeli", label: "fitness and health" },
+    { value: "5 screens", label: "planning and student journey" },
+    { value: "Full stack", label: "Next.js, TypeScript, and FastAPI" },
   ],
   services: [
     "Technical support and IT process improvement",
@@ -319,7 +350,7 @@ const portfolioDataEN = {
       href: "https://github.com/Kraunser",
     },
   ],
-  featuredCaseId: "gestao-ti",
+  featuredCaseId: "pradeli",
   caseStudies: [
     {
       id: "gestao-ti",
@@ -362,6 +393,37 @@ const portfolioDataEN = {
         ["15-tools-service-manager.png", "Service manager", "Auxiliary flow for technical support."],
         ["16-tools-disk-cleanup.png", "Disk cleanup", "Integrated maintenance utility."],
         ["17-settings.png", "Settings", "General platform settings."],
+      ]),
+    },
+    {
+      id: "pradeli",
+      accent: "#62c9bd",
+      initialShot: 0,
+      title: "Pradeli Movimento",
+      category: "Fitness and health · In development",
+      summary:
+        "A full-stack platform connecting a fitness professional's training plans to the student's daily workouts and follow-up.",
+      description:
+        "The current core includes versioned training programs, scheduling, check-ins, and mobile workout execution. I develop the solution with Next.js, TypeScript, and FastAPI, with server-side authorization scoped to each professional–student relationship. Nutrition and Physiotherapy are planned extensions and are not implemented yet. Screenshots use demo data.",
+      stack: ["Next.js", "React", "TypeScript", "FastAPI", "SQLAlchemy", "SQLite", "Alembic"],
+      highlights: [
+        "Individual planning with priorities, exercises, and weekly targets for sets, repetitions, and RPE.",
+        "A mobile journey with today's workout, execution records, a timer, and check-ins shared with recipients selected by the student.",
+        "Workspaces, invitations, and contextual relationships; PostgreSQL and production validation remain pending.",
+      ],
+      architecture: [
+        "Next.js + React + TypeScript",
+        "FastAPI REST API + HttpOnly cookie sessions",
+        "SQLAlchemy + SQLite + Alembic migrations",
+        "Versioned programs, check-ins, and follow-up relationships",
+      ],
+      repoUrl: null,
+      gallery: galleryFrom("pradeli", [
+        ["01-planning.png", "Individual planning", "Assessment, goals, and program priorities shown with demo data."],
+        ["02-training-cycle.png", "Training cycle", "Weekly exercise targets for sets, repetitions, perceived exertion, and rest."],
+        ["03-student-today.png", "Today on mobile", "Today's workout and follow-up shortcuts in the student's mobile experience."],
+        ["04-workout.png", "Workout execution", "Load and repetition records, a timer, and mobile session completion."],
+        ["05-workspaces.png", "Workspaces and relationships", "Membership management and workspace-linked follow-up without automatically sharing historical records."],
       ]),
     },
     {
@@ -500,7 +562,7 @@ const staticText = {
     navProjects: "Projetos",
     navContact: "Contato",
     navCta: "Vamos conversar",
-    btnViewProjects: "Ver Portal de Gestão de T.I.",
+    btnViewProjects: "Conhecer o Pradeli Movimento",
     btnContact: "Falar comigo",
     spotlightCase: "Case em foco",
     openCase: "Abrir case completo",
@@ -535,7 +597,7 @@ const staticText = {
     navProjects: "Projects",
     navContact: "Contact",
     navCta: "Let's talk",
-    btnViewProjects: "View IT Management Portal",
+    btnViewProjects: "Explore Pradeli Movimento",
     btnContact: "Contact me",
     spotlightCase: "Featured case",
     openCase: "Open full case",
@@ -865,7 +927,11 @@ function createCaseStudy(project, index) {
 function renderCaseStudies() {
   const caseList = document.getElementById("case-studies");
   caseList.replaceChildren();
-  portfolioData.caseStudies.forEach((project, index) => {
+  const orderedProjects = [
+    ...portfolioData.caseStudies.filter((project) => project.id === portfolioData.featuredCaseId),
+    ...portfolioData.caseStudies.filter((project) => project.id !== portfolioData.featuredCaseId),
+  ];
+  orderedProjects.forEach((project, index) => {
     caseList.appendChild(createCaseStudy(project, index));
   });
 }
